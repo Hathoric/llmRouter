@@ -1,0 +1,31 @@
+# 模型/端点注册表
+# endpoint 可用环境变量占位，如 ${OPENAI_API_BASE}
+
+models:
+  gpt-4o:
+    name: GPT-4o
+    endpoint: https://api.openai.com/v1
+    provider: openai
+    max_context_tokens: 128000
+    cost_tier: high
+
+  gpt-4o-mini:
+    name: GPT-4o Mini
+    endpoint: https://api.openai.com/v1
+    provider: openai
+    max_context_tokens: 128000
+    cost_tier: low
+
+  claude-3-5-sonnet:
+    name: Claude 3.5 Sonnet
+    endpoint: https://api.anthropic.com
+    provider: anthropic
+    max_context_tokens: 200000
+    cost_tier: medium
+
+  deepseek-chat:
+    name: DeepSeek Chat
+    endpoint: https://api.deepseek.com/v1
+    provider: deepseek
+    max_context_tokens: 160000
+    cost_tier: low

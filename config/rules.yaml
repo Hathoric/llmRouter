@@ -1,0 +1,47 @@
+# 基于规则的模型路由配置
+# 规则按 priority 降序匹配，先匹配到的规则生效
+
+rules:
+  # 高成本任务 -> 使用经济型模型
+  - id: rule-cheap-long
+    name: 长文本经济路由
+    priority: 100
+    conditions:
+      task_type: completion
+      max_tokens: ["gte", 4000]
+      cost_tier: low
+    target: gpt-4o-mini
+
+  # 对话类 -> 默认对话模型
+  - id: rule-chat-default
+    name: 默认对话
+    priority: 90
+    conditions:
+      task_type: chat
+    target: gpt-4o-mini
+
+  # 需要强推理 -> 使用高级模型
+  - id: rule-reasoning
+    name: 推理任务
+    priority: 95
+    conditions:
+      task_type: chat
+      tags: ["reasoning", "math"]
+    target: gpt-4o
+
+  # 低成本聊天 -> 使用 DeepSeek 模型
+  - id: rule-chat-deepseek-low
+    name: DeepSeek 低成本聊天
+    priority: 92
+    conditions:
+      task_type: chat
+      cost_tier: low
+    target: deepseek-chat
+
+  # 兜底规则（priority 最低）
+  - id: rule-fallback
+    name: 默认兜底
+    priority: 0
+    conditions: {}
+    target: gpt-4o-mini
+
