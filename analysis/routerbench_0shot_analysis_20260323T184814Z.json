@@ -1,0 +1,1920 @@
+{
+  "dataset_path": "dataset/routerbench_0shot.pkl",
+  "generated_at_utc": "2026-03-23T18:48:12.965206Z",
+  "shape": {
+    "rows": 36497,
+    "columns": 37
+  },
+  "columns": [
+    "sample_id",
+    "prompt",
+    "eval_name",
+    "WizardLM/WizardLM-13B-V1.2",
+    "claude-instant-v1",
+    "claude-v1",
+    "claude-v2",
+    "gpt-3.5-turbo-1106",
+    "gpt-4-1106-preview",
+    "meta/code-llama-instruct-34b-chat",
+    "meta/llama-2-70b-chat",
+    "mistralai/mistral-7b-chat",
+    "mistralai/mixtral-8x7b-chat",
+    "zero-one-ai/Yi-34B-Chat",
+    "gpt-3.5-turbo-1106|model_response",
+    "claude-instant-v1|model_response",
+    "claude-v1|model_response",
+    "claude-v2|model_response",
+    "gpt-4-1106-preview|model_response",
+    "meta/llama-2-70b-chat|model_response",
+    "mistralai/mixtral-8x7b-chat|model_response",
+    "zero-one-ai/Yi-34B-Chat|model_response",
+    "WizardLM/WizardLM-13B-V1.2|model_response",
+    "meta/code-llama-instruct-34b-chat|model_response",
+    "mistralai/mistral-7b-chat|model_response",
+    "gpt-3.5-turbo-1106|total_cost",
+    "claude-instant-v1|total_cost",
+    "claude-v1|total_cost",
+    "claude-v2|total_cost",
+    "gpt-4-1106-preview|total_cost",
+    "meta/llama-2-70b-chat|total_cost",
+    "mistralai/mixtral-8x7b-chat|total_cost",
+    "zero-one-ai/Yi-34B-Chat|total_cost",
+    "WizardLM/WizardLM-13B-V1.2|total_cost",
+    "meta/code-llama-instruct-34b-chat|total_cost",
+    "mistralai/mistral-7b-chat|total_cost",
+    "oracle_model_to_route_to"
+  ],
+  "dtypes": {
+    "sample_id": "object",
+    "prompt": "object",
+    "eval_name": "object",
+    "WizardLM/WizardLM-13B-V1.2": "object",
+    "claude-instant-v1": "object",
+    "claude-v1": "object",
+    "claude-v2": "object",
+    "gpt-3.5-turbo-1106": "object",
+    "gpt-4-1106-preview": "object",
+    "meta/code-llama-instruct-34b-chat": "object",
+    "meta/llama-2-70b-chat": "object",
+    "mistralai/mistral-7b-chat": "object",
+    "mistralai/mixtral-8x7b-chat": "object",
+    "zero-one-ai/Yi-34B-Chat": "object",
+    "gpt-3.5-turbo-1106|model_response": "object",
+    "claude-instant-v1|model_response": "object",
+    "claude-v1|model_response": "object",
+    "claude-v2|model_response": "object",
+    "gpt-4-1106-preview|model_response": "object",
+    "meta/llama-2-70b-chat|model_response": "object",
+    "mistralai/mixtral-8x7b-chat|model_response": "object",
+    "zero-one-ai/Yi-34B-Chat|model_response": "object",
+    "WizardLM/WizardLM-13B-V1.2|model_response": "object",
+    "meta/code-llama-instruct-34b-chat|model_response": "object",
+    "mistralai/mistral-7b-chat|model_response": "object",
+    "gpt-3.5-turbo-1106|total_cost": "float64",
+    "claude-instant-v1|total_cost": "float64",
+    "claude-v1|total_cost": "float64",
+    "claude-v2|total_cost": "float64",
+    "gpt-4-1106-preview|total_cost": "float64",
+    "meta/llama-2-70b-chat|total_cost": "float64",
+    "mistralai/mixtral-8x7b-chat|total_cost": "float64",
+    "zero-one-ai/Yi-34B-Chat|total_cost": "float64",
+    "WizardLM/WizardLM-13B-V1.2|total_cost": "float64",
+    "meta/code-llama-instruct-34b-chat|total_cost": "float64",
+    "mistralai/mistral-7b-chat|total_cost": "float64",
+    "oracle_model_to_route_to": "object"
+  },
+  "missing": {
+    "null_count": {
+      "sample_id": 0,
+      "prompt": 0,
+      "eval_name": 0,
+      "WizardLM/WizardLM-13B-V1.2": 0,
+      "claude-instant-v1": 0,
+      "claude-v1": 0,
+      "claude-v2": 0,
+      "gpt-3.5-turbo-1106": 0,
+      "gpt-4-1106-preview": 0,
+      "meta/code-llama-instruct-34b-chat": 0,
+      "meta/llama-2-70b-chat": 0,
+      "mistralai/mistral-7b-chat": 0,
+      "mistralai/mixtral-8x7b-chat": 0,
+      "zero-one-ai/Yi-34B-Chat": 0,
+      "gpt-3.5-turbo-1106|model_response": 0,
+      "claude-instant-v1|model_response": 0,
+      "claude-v1|model_response": 0,
+      "claude-v2|model_response": 0,
+      "gpt-4-1106-preview|model_response": 0,
+      "meta/llama-2-70b-chat|model_response": 0,
+      "mistralai/mixtral-8x7b-chat|model_response": 0,
+      "zero-one-ai/Yi-34B-Chat|model_response": 0,
+      "WizardLM/WizardLM-13B-V1.2|model_response": 0,
+      "meta/code-llama-instruct-34b-chat|model_response": 0,
+      "mistralai/mistral-7b-chat|model_response": 0,
+      "gpt-3.5-turbo-1106|total_cost": 0,
+      "claude-instant-v1|total_cost": 0,
+      "claude-v1|total_cost": 0,
+      "claude-v2|total_cost": 0,
+      "gpt-4-1106-preview|total_cost": 0,
+      "meta/llama-2-70b-chat|total_cost": 0,
+      "mistralai/mixtral-8x7b-chat|total_cost": 0,
+      "zero-one-ai/Yi-34B-Chat|total_cost": 0,
+      "WizardLM/WizardLM-13B-V1.2|total_cost": 0,
+      "meta/code-llama-instruct-34b-chat|total_cost": 0,
+      "mistralai/mistral-7b-chat|total_cost": 0,
+      "oracle_model_to_route_to": 0
+    },
+    "null_rate": {
+      "sample_id": 0.0,
+      "prompt": 0.0,
+      "eval_name": 0.0,
+      "WizardLM/WizardLM-13B-V1.2": 0.0,
+      "claude-instant-v1": 0.0,
+      "claude-v1": 0.0,
+      "claude-v2": 0.0,
+      "gpt-3.5-turbo-1106": 0.0,
+      "gpt-4-1106-preview": 0.0,
+      "meta/code-llama-instruct-34b-chat": 0.0,
+      "meta/llama-2-70b-chat": 0.0,
+      "mistralai/mistral-7b-chat": 0.0,
+      "mistralai/mixtral-8x7b-chat": 0.0,
+      "zero-one-ai/Yi-34B-Chat": 0.0,
+      "gpt-3.5-turbo-1106|model_response": 0.0,
+      "claude-instant-v1|model_response": 0.0,
+      "claude-v1|model_response": 0.0,
+      "claude-v2|model_response": 0.0,
+      "gpt-4-1106-preview|model_response": 0.0,
+      "meta/llama-2-70b-chat|model_response": 0.0,
+      "mistralai/mixtral-8x7b-chat|model_response": 0.0,
+      "zero-one-ai/Yi-34B-Chat|model_response": 0.0,
+      "WizardLM/WizardLM-13B-V1.2|model_response": 0.0,
+      "meta/code-llama-instruct-34b-chat|model_response": 0.0,
+      "mistralai/mistral-7b-chat|model_response": 0.0,
+      "gpt-3.5-turbo-1106|total_cost": 0.0,
+      "claude-instant-v1|total_cost": 0.0,
+      "claude-v1|total_cost": 0.0,
+      "claude-v2|total_cost": 0.0,
+      "gpt-4-1106-preview|total_cost": 0.0,
+      "meta/llama-2-70b-chat|total_cost": 0.0,
+      "mistralai/mixtral-8x7b-chat|total_cost": 0.0,
+      "zero-one-ai/Yi-34B-Chat|total_cost": 0.0,
+      "WizardLM/WizardLM-13B-V1.2|total_cost": 0.0,
+      "meta/code-llama-instruct-34b-chat|total_cost": 0.0,
+      "mistralai/mistral-7b-chat|total_cost": 0.0,
+      "oracle_model_to_route_to": 0.0
+    }
+  },
+  "numeric_columns": [
+    "gpt-3.5-turbo-1106|total_cost",
+    "claude-instant-v1|total_cost",
+    "claude-v1|total_cost",
+    "claude-v2|total_cost",
+    "gpt-4-1106-preview|total_cost",
+    "meta/llama-2-70b-chat|total_cost",
+    "mistralai/mixtral-8x7b-chat|total_cost",
+    "zero-one-ai/Yi-34B-Chat|total_cost",
+    "WizardLM/WizardLM-13B-V1.2|total_cost",
+    "meta/code-llama-instruct-34b-chat|total_cost",
+    "mistralai/mistral-7b-chat|total_cost"
+  ],
+  "object_columns": [
+    "sample_id",
+    "prompt",
+    "eval_name",
+    "WizardLM/WizardLM-13B-V1.2",
+    "claude-instant-v1",
+    "claude-v1",
+    "claude-v2",
+    "gpt-3.5-turbo-1106",
+    "gpt-4-1106-preview",
+    "meta/code-llama-instruct-34b-chat",
+    "meta/llama-2-70b-chat",
+    "mistralai/mistral-7b-chat",
+    "mistralai/mixtral-8x7b-chat",
+    "zero-one-ai/Yi-34B-Chat",
+    "gpt-3.5-turbo-1106|model_response",
+    "claude-instant-v1|model_response",
+    "claude-v1|model_response",
+    "claude-v2|model_response",
+    "gpt-4-1106-preview|model_response",
+    "meta/llama-2-70b-chat|model_response",
+    "mistralai/mixtral-8x7b-chat|model_response",
+    "zero-one-ai/Yi-34B-Chat|model_response",
+    "WizardLM/WizardLM-13B-V1.2|model_response",
+    "meta/code-llama-instruct-34b-chat|model_response",
+    "mistralai/mistral-7b-chat|model_response",
+    "oracle_model_to_route_to"
+  ],
+  "numeric_stats": {
+    "gpt-3.5-turbo-1106|total_cost": {
+      "count": 36497,
+      "mean": 0.00024326004877113185,
+      "std": 0.0001839577775210563,
+      "min": 2.2e-05,
+      "p25": 9.999999999999999e-05,
+      "p50": 0.000188,
+      "p75": 0.000315,
+      "max": 0.006443
+    },
+    "claude-instant-v1|total_cost": {
+      "count": 36497,
+      "mean": 0.00023293712907910245,
+      "std": 0.00020952604898225635,
+      "min": 1.76e-05,
+      "p25": 8.080000000000001e-05,
+      "p50": 0.000152,
+      "p75": 0.0002752,
+      "max": 0.001908
+    },
+    "claude-v1|total_cost": {
+      "count": 36497,
+      "mean": 0.0021446553963339453,
+      "std": 0.001806112881451408,
+      "min": 0.000136,
+      "p25": 0.000808,
+      "p50": 0.0015279999999999998,
+      "p75": 0.0026720000000000003,
+      "max": 0.029464
+    },
+    "claude-v2|total_cost": {
+      "count": 36497,
+      "mean": 0.0024186040496479164,
+      "std": 0.0021907697969781397,
+      "min": 0.000136,
+      "p25": 0.000808,
+      "p50": 0.00156,
+      "p75": 0.003264,
+      "max": 0.01956
+    },
+    "gpt-4-1106-preview|total_cost": {
+      "count": 36497,
+      "mean": 0.0032927528289996436,
+      "std": 0.0034287199241018014,
+      "min": 0.00016999999999999999,
+      "p25": 0.00101,
+      "p50": 0.00193,
+      "p75": 0.0037400000000000003,
+      "max": 0.05073
+    },
+    "meta/llama-2-70b-chat|total_cost": {
+      "count": 36497,
+      "mean": 0.0002026650217826123,
+      "std": 0.0001330945781728438,
+      "min": 1.35e-05,
+      "p25": 9e-05,
+      "p50": 0.00017189999999999998,
+      "p75": 0.0002916,
+      "max": 0.0029169000000000005
+    },
+    "mistralai/mixtral-8x7b-chat|total_cost": {
+      "count": 36497,
+      "mean": 0.00013457989971778504,
+      "std": 8.793147339201127e-05,
+      "min": 1.14e-05,
+      "p25": 6e-05,
+      "p50": 0.00011279999999999999,
+      "p75": 0.00018480000000000002,
+      "max": 0.0016547999999999999
+    },
+    "zero-one-ai/Yi-34B-Chat|total_cost": {
+      "count": 36497,
+      "mean": 0.00018552225114392966,
+      "std": 0.00013225094265476286,
+      "min": 2e-05,
+      "p25": 7.920000000000001e-05,
+      "p50": 0.00014800000000000002,
+      "p75": 0.00023600000000000002,
+      "max": 0.0012472
+    },
+    "WizardLM/WizardLM-13B-V1.2|total_cost": {
+      "count": 36497,
+      "mean": 7.291440118365893e-05,
+      "std": 5.3278694096186e-05,
+      "min": 8.1e-06,
+      "p25": 2.97e-05,
+      "p50": 5.61e-05,
+      "p75": 9.51e-05,
+      "max": 0.0004623
+    },
+    "meta/code-llama-instruct-34b-chat|total_cost": {
+      "count": 36497,
+      "mean": 0.00017204870624982875,
+      "std": 0.00011130833045143225,
+      "min": 1.1640000000000002e-05,
+      "p25": 7.682400000000001e-05,
+      "p50": 0.00014045599999999998,
+      "p75": 0.000237456,
+      "max": 0.0010623440000000002
+    },
+    "mistralai/mistral-7b-chat|total_cost": {
+      "count": 36497,
+      "mean": 4.572428966764392e-05,
+      "std": 3.789326419888463e-05,
+      "min": 3.8000000000000005e-06,
+      "p25": 1.98e-05,
+      "p50": 3.68e-05,
+      "p75": 6e-05,
+      "max": 0.0008276000000000001
+    }
+  },
+  "categorical_top_values": {
+    "sample_id": [
+      {
+        "value": "winogrande.dev.999",
+        "count": 1,
+        "rate": 2.739951228868126e-05
+      },
+      {
+        "value": "winogrande.dev.984",
+        "count": 1,
+        "rate": 2.739951228868126e-05
+      },
+      {
+        "value": "winogrande.dev.983",
+        "count": 1,
+        "rate": 2.739951228868126e-05
+      },
+      {
+        "value": "winogrande.dev.982",
+        "count": 1,
+        "rate": 2.739951228868126e-05
+      },
+      {
+        "value": "winogrande.dev.981",
+        "count": 1,
+        "rate": 2.739951228868126e-05
+      },
+      {
+        "value": "winogrande.dev.980",
+        "count": 1,
+        "rate": 2.739951228868126e-05
+      },
+      {
+        "value": "winogrande.dev.98",
+        "count": 1,
+        "rate": 2.739951228868126e-05
+      },
+      {
+        "value": "winogrande.dev.979",
+        "count": 1,
+        "rate": 2.739951228868126e-05
+      }
+    ],
+    "prompt": [
+      {
+        "value": "['Classify the following sentence of a news article as fact (statment free of rephrasing, interpretation, opinions, and emotions), opinion (expression of a personal view, judgement, appraisal, opinion, or interpretation), claim (assertion of unverified information, rephrased facts, or affirmation of opinions), argument (data, information, reference, opinion, or narrative used to support a claim), data (raw data or statistics, must incluide the source which cant be a person, and must exclude any interpretation of the data), quote (direct quote from a person or a document), narrative (a story, account of events, experiences, or context used to illustrate a claim or argument), sensationalism (when it incluides exaggerations, sarcasm, emotion inducing manipulation, scandal-mongering, or other sensational behavior to induce emotions), or speculation (assumption, theory or opinion about a future event or a hypothetical scenario). Please provide a reasoning for your classification and then state your final answer enclosed in square brackets.', \"Biden's claim is false.\"]",
+        "count": 2,
+        "rate": 5.479902457736252e-05
+      },
+      {
+        "value": "[\"Generate a brief answer using only the provided claims, with no personal opinions or outside knowledge. If there is no answer based on the claims, write 'N-A'.\", 'claim: We conclude that neurological soft signs are associated with regional grey matter volume changes and that they may represent a clinical sign of the perturbed cortical-subcortical connectivity that putatively underlies psychotic disorders.\\nclaim: Neurological soft signs may be an easy-to-assess marker of region-specific structural brain deficits in adolescents with first-episode psychosis.\\nclaim: Our results demonstrate that perceptuo-motor difficulties and minor neurological soft signs are a consistent feature in CMD children with diffuse MRI changes but not with normal MRI.\\nclaim: There is an emerging consensus that neurological soft signs (NSS) may not be \"soft\" at all but rather may reflect neuropathy, particularly in the cerebellum and thalamus.\\nclaim: The authors speculate that nonfocal soft sign neurological abnormalities may reflect underlying central nervous system dysfunction, which may in turn be associated with the development of borderline personality disorders.\\nquestion: do children with neurological soft signs have altered brain structures?']",
+        "count": 2,
+        "rate": 5.479902457736252e-05
+      },
+      {
+        "value": "['Write a function to sort a list of elements.']",
+        "count": 2,
+        "rate": 5.479902457736252e-05
+      },
+      {
+        "value": "['Please answer with the letter of the correct answer.\\n\\nAn artist doing a pencil drawing could use which of the following techniques to add depth to her or his drawing?\\nA) retinal disparity\\nB) linear perspective\\nC) convergence\\nD) closure\\nPrint only a single choice  from \"A\" or \"B\" or \"C\" or \"D\" without explanation. Answer:']",
+        "count": 2,
+        "rate": 5.479902457736252e-05
+      },
+      {
+        "value": "['Write a function to sort each sublist of strings in a given list of lists.']",
+        "count": 2,
+        "rate": 5.479902457736252e-05
+      },
+      {
+        "value": "[\"Generate a brief answer using only the provided claims, with no personal opinions or outside knowledge. If there is no answer based on the claims, write 'N-A'.\", 'claim: Supplementation of magnesium appears to improve subjective measures of insomnia such as ISI score, sleep efficiency, sleep time and sleep onset latency, early morning awakening, and likewise, insomnia objective measures such as concentration of serum renin, melatonin, and serum cortisol, in elderly people.\\nclaim: Magnesium supplementation may be a treatment that improves sleep quality in some individuals.\\nclaim: However, given that oral magnesium is very cheap and widely available, there is weak evidence supporting improved sleep parameters after magnesium supplementation for insomnia symptoms.\\nclaim: This is the first clinical study showing that the perioperative application of magnesium sulfate is associated with smaller analgesic requirement, less discomfort, and a better quality of sleep in the postoperative period but not with adverse effects.\\nclaim: This study concludes that tryptophan and magnesium-enriched Mediterranean diet reduced anxiety symptoms, mood disturbance, eating disorders, and dissatisfaction with body image but did not improve sleep quality in women with fibromyalgia.\\nquestion: Does magnesium improve sleep?']",
+        "count": 2,
+        "rate": 5.479902457736252e-05
+      },
+      {
+        "value": "['小说《一地鸡毛》的作者是谁?只回答作者名称,不要额外附加其他内容']",
+        "count": 2,
+        "rate": 5.479902457736252e-05
+      },
+      {
+        "value": "[\"Generate a brief answer using only the provided claims, with no personal opinions or outside knowledge. If there is no answer based on the claims, write 'N-A'.\", \"claim: The article shows that despite a significantly different context in which religion's place in political life is more contentious, regular religious attendance increases political participation rates of ethnic minorities.\\nclaim: We argue that as religious groups and identities become structured less by what religion they are and more by how religious they are (or are not), candidate religiosity and secularism should condition the impact of political orientations such as partisanship and cultural policy attitudes on vote choice.\\nclaim: Survey data indicate that religious intensity (“devout-ness”), rather than religious affiliation, does influence political attitudes, and that demographic and political engagement variables also influence democratic values.\\nclaim: Ultimately, the findings indicate that, even when we control for political party affiliation, which is a dominant influence on roll-call voting, conservative Protestant religious affiliation and high religious salience influence legislative voting.\\nclaim: Despite the relative homogeneity in religious attitudes and behaviors among evangelicals, it is found that denomination, doctrine, religious identification, exposure to religious elites, and the subjective connection between religious and political beliefs have a significant influence on political attitudes.\\nquestion: do religious beliefs impact political elections?\"]",
+        "count": 2,
+        "rate": 5.479902457736252e-05
+      }
+    ],
+    "eval_name": [
+      {
+        "value": "hellaswag",
+        "count": 10042,
+        "rate": 0.27514590240293724
+      },
+      {
+        "value": "grade-school-math",
+        "count": 7450,
+        "rate": 0.2041263665506754
+      },
+      {
+        "value": "mmlu-professional-law",
+        "count": 1534,
+        "rate": 0.042030851850837055
+      },
+      {
+        "value": "arc-challenge",
+        "count": 1470,
+        "rate": 0.04027728306436146
+      },
+      {
+        "value": "winogrande",
+        "count": 1267,
+        "rate": 0.03471518206975916
+      },
+      {
+        "value": "mmlu-moral-scenarios",
+        "count": 895,
+        "rate": 0.024522563498369728
+      },
+      {
+        "value": "mmlu-miscellaneous",
+        "count": 783,
+        "rate": 0.02145381812203743
+      },
+      {
+        "value": "mmlu-professional-psychology",
+        "count": 612,
+        "rate": 0.016768501520672933
+      }
+    ],
+    "WizardLM/WizardLM-13B-V1.2": [
+      {
+        "value": 0.0,
+        "count": 16998,
+        "rate": 0.4657369098830041
+      },
+      {
+        "value": 1.0,
+        "count": 11789,
+        "rate": 0.32301285037126337
+      },
+      {
+        "value": 0.75,
+        "count": 3355,
+        "rate": 0.09192536372852564
+      },
+      {
+        "value": 0.25,
+        "count": 2978,
+        "rate": 0.0815957475956928
+      },
+      {
+        "value": 0.5,
+        "count": 1312,
+        "rate": 0.03594816012274982
+      },
+      {
+        "value": 0.1,
+        "count": 20,
+        "rate": 0.0005479902457736252
+      },
+      {
+        "value": 0.9,
+        "count": 12,
+        "rate": 0.00032879414746417513
+      },
+      {
+        "value": 0.2,
+        "count": 10,
+        "rate": 0.0002739951228868126
+      }
+    ],
+    "claude-instant-v1": [
+      {
+        "value": 1.0,
+        "count": 17042,
+        "rate": 0.46694248842370606
+      },
+      {
+        "value": 0.0,
+        "count": 11786,
+        "rate": 0.32293065183439734
+      },
+      {
+        "value": 0.75,
+        "count": 5329,
+        "rate": 0.14601200098638245
+      },
+      {
+        "value": 0.25,
+        "count": 1477,
+        "rate": 0.040469079650382225
+      },
+      {
+        "value": 0.5,
+        "count": 805,
+        "rate": 0.022056607392388416
+      },
+      {
+        "value": 0.9,
+        "count": 16,
+        "rate": 0.00043839219661890016
+      },
+      {
+        "value": 0.1,
+        "count": 15,
+        "rate": 0.0004109926843302189
+      },
+      {
+        "value": 0.3,
+        "count": 8,
+        "rate": 0.00021919609830945008
+      }
+    ],
+    "claude-v1": [
+      {
+        "value": 1.0,
+        "count": 18072,
+        "rate": 0.4951639860810478
+      },
+      {
+        "value": 0.0,
+        "count": 10788,
+        "rate": 0.29558593857029347
+      },
+      {
+        "value": 0.75,
+        "count": 5504,
+        "rate": 0.15080691563690166
+      },
+      {
+        "value": 0.25,
+        "count": 1070,
+        "rate": 0.02931747814888895
+      },
+      {
+        "value": 0.5,
+        "count": 1011,
+        "rate": 0.027700906923856756
+      },
+      {
+        "value": 0.9,
+        "count": 15,
+        "rate": 0.0004109926843302189
+      },
+      {
+        "value": 0.1,
+        "count": 14,
+        "rate": 0.00038359317204153764
+      },
+      {
+        "value": 0.2,
+        "count": 10,
+        "rate": 0.0002739951228868126
+      }
+    ],
+    "claude-v2": [
+      {
+        "value": 1.0,
+        "count": 18041,
+        "rate": 0.4943146012000986
+      },
+      {
+        "value": 0.0,
+        "count": 10685,
+        "rate": 0.2927637888045593
+      },
+      {
+        "value": 0.75,
+        "count": 5836,
+        "rate": 0.15990355371674383
+      },
+      {
+        "value": 0.5,
+        "count": 1168,
+        "rate": 0.03200263035317971
+      },
+      {
+        "value": 0.25,
+        "count": 720,
+        "rate": 0.01972764884785051
+      },
+      {
+        "value": 0.1,
+        "count": 14,
+        "rate": 0.00038359317204153764
+      },
+      {
+        "value": 0.8,
+        "count": 11,
+        "rate": 0.0003013946351754939
+      },
+      {
+        "value": 0.9,
+        "count": 8,
+        "rate": 0.00021919609830945008
+      }
+    ],
+    "gpt-3.5-turbo-1106": [
+      {
+        "value": 1.0,
+        "count": 17912,
+        "rate": 0.49078006411485875
+      },
+      {
+        "value": 0.0,
+        "count": 10848,
+        "rate": 0.29722990930761434
+      },
+      {
+        "value": 0.75,
+        "count": 4620,
+        "rate": 0.12658574677370743
+      },
+      {
+        "value": 0.5,
+        "count": 1737,
+        "rate": 0.04759295284543935
+      },
+      {
+        "value": 0.25,
+        "count": 1331,
+        "rate": 0.03646875085623476
+      },
+      {
+        "value": 0.9,
+        "count": 14,
+        "rate": 0.00038359317204153764
+      },
+      {
+        "value": 0.1,
+        "count": 12,
+        "rate": 0.00032879414746417513
+      },
+      {
+        "value": 0.2,
+        "count": 6,
+        "rate": 0.00016439707373208757
+      }
+    ],
+    "gpt-4-1106-preview": [
+      {
+        "value": 1.0,
+        "count": 23446,
+        "rate": 0.6424089651204209
+      },
+      {
+        "value": 0.0,
+        "count": 5332,
+        "rate": 0.14609419952324848
+      },
+      {
+        "value": 0.75,
+        "count": 5224,
+        "rate": 0.14313505219607092
+      },
+      {
+        "value": 0.5,
+        "count": 2105,
+        "rate": 0.057675973367674056
+      },
+      {
+        "value": 0.25,
+        "count": 365,
+        "rate": 0.01000082198536866
+      },
+      {
+        "value": 0.1,
+        "count": 10,
+        "rate": 0.0002739951228868126
+      },
+      {
+        "value": 0.9,
+        "count": 7,
+        "rate": 0.00019179658602076882
+      },
+      {
+        "value": 0.3,
+        "count": 2,
+        "rate": 5.479902457736252e-05
+      }
+    ],
+    "meta/code-llama-instruct-34b-chat": [
+      {
+        "value": 0.0,
+        "count": 24960,
+        "rate": 0.6838918267254843
+      },
+      {
+        "value": 0.25,
+        "count": 3908,
+        "rate": 0.10707729402416637
+      },
+      {
+        "value": 1.0,
+        "count": 3779,
+        "rate": 0.10354275693892649
+      },
+      {
+        "value": 0.75,
+        "count": 2820,
+        "rate": 0.07726662465408116
+      },
+      {
+        "value": 0.5,
+        "count": 969,
+        "rate": 0.026550127407732143
+      },
+      {
+        "value": 0.1,
+        "count": 20,
+        "rate": 0.0005479902457736252
+      },
+      {
+        "value": 0.7,
+        "count": 9,
+        "rate": 0.00024659561059813136
+      },
+      {
+        "value": 0.4,
+        "count": 8,
+        "rate": 0.00021919609830945008
+      }
+    ],
+    "meta/llama-2-70b-chat": [
+      {
+        "value": 0.0,
+        "count": 20850,
+        "rate": 0.5712798312190043
+      },
+      {
+        "value": 1.0,
+        "count": 7865,
+        "rate": 0.21549716415047812
+      },
+      {
+        "value": 0.75,
+        "count": 3778,
+        "rate": 0.10351535742663781
+      },
+      {
+        "value": 0.25,
+        "count": 2803,
+        "rate": 0.07680083294517358
+      },
+      {
+        "value": 0.5,
+        "count": 1146,
+        "rate": 0.03139984108282873
+      },
+      {
+        "value": 0.1,
+        "count": 20,
+        "rate": 0.0005479902457736252
+      },
+      {
+        "value": 0.9,
+        "count": 12,
+        "rate": 0.00032879414746417513
+      },
+      {
+        "value": 0.8,
+        "count": 6,
+        "rate": 0.00016439707373208757
+      }
+    ],
+    "mistralai/mistral-7b-chat": [
+      {
+        "value": 0.0,
+        "count": 20848,
+        "rate": 0.5712250321944269
+      },
+      {
+        "value": 1.0,
+        "count": 7915,
+        "rate": 0.21686713976491218
+      },
+      {
+        "value": 0.25,
+        "count": 4696,
+        "rate": 0.1286681097076472
+      },
+      {
+        "value": 0.75,
+        "count": 2277,
+        "rate": 0.06238868948132723
+      },
+      {
+        "value": 0.5,
+        "count": 699,
+        "rate": 0.019152259089788203
+      },
+      {
+        "value": 0.1,
+        "count": 19,
+        "rate": 0.0005205907334849439
+      },
+      {
+        "value": 0.2,
+        "count": 14,
+        "rate": 0.00038359317204153764
+      },
+      {
+        "value": 0.9,
+        "count": 12,
+        "rate": 0.00032879414746417513
+      }
+    ],
+    "mistralai/mixtral-8x7b-chat": [
+      {
+        "value": 1.0,
+        "count": 15948,
+        "rate": 0.43696742197988875
+      },
+      {
+        "value": 0.0,
+        "count": 12866,
+        "rate": 0.3525221251061731
+      },
+      {
+        "value": 0.75,
+        "count": 3597,
+        "rate": 0.09855604570238649
+      },
+      {
+        "value": 0.25,
+        "count": 2870,
+        "rate": 0.07863660026851522
+      },
+      {
+        "value": 0.5,
+        "count": 1169,
+        "rate": 0.03203002986546839
+      },
+      {
+        "value": 0.1,
+        "count": 18,
+        "rate": 0.0004931912211962627
+      },
+      {
+        "value": 0.9,
+        "count": 12,
+        "rate": 0.00032879414746417513
+      },
+      {
+        "value": 0.3,
+        "count": 7,
+        "rate": 0.00019179658602076882
+      }
+    ],
+    "zero-one-ai/Yi-34B-Chat": [
+      {
+        "value": 1.0,
+        "count": 19392,
+        "rate": 0.531331342302107
+      },
+      {
+        "value": 0.0,
+        "count": 9400,
+        "rate": 0.25755541551360384
+      },
+      {
+        "value": 0.75,
+        "count": 3961,
+        "rate": 0.10852946817546648
+      },
+      {
+        "value": 0.25,
+        "count": 2403,
+        "rate": 0.06584102802970107
+      },
+      {
+        "value": 0.5,
+        "count": 1297,
+        "rate": 0.035537167438419594
+      },
+      {
+        "value": 0.1,
+        "count": 15,
+        "rate": 0.0004109926843302189
+      },
+      {
+        "value": 0.9,
+        "count": 11,
+        "rate": 0.0003013946351754939
+      },
+      {
+        "value": 0.7,
+        "count": 7,
+        "rate": 0.00019179658602076882
+      }
+    ],
+    "gpt-3.5-turbo-1106|model_response": [
+      {
+        "value": "['D']",
+        "count": 4694,
+        "rate": 0.12861331068306983
+      },
+      {
+        "value": "['C']",
+        "count": 4498,
+        "rate": 0.12324300627448831
+      },
+      {
+        "value": "['B']",
+        "count": 4353,
+        "rate": 0.11927007699262954
+      },
+      {
+        "value": "['A']",
+        "count": 3688,
+        "rate": 0.1010494013206565
+      },
+      {
+        "value": "['B)']",
+        "count": 3194,
+        "rate": 0.08751404225004795
+      },
+      {
+        "value": "['C)']",
+        "count": 3004,
+        "rate": 0.0823081349151985
+      },
+      {
+        "value": "['D)']",
+        "count": 1782,
+        "rate": 0.04882593089843001
+      },
+      {
+        "value": "['A)']",
+        "count": 1549,
+        "rate": 0.04244184453516727
+      }
+    ],
+    "claude-instant-v1|model_response": [
+      {
+        "value": "['C']",
+        "count": 8160,
+        "rate": 0.22358002027563909
+      },
+      {
+        "value": "['B']",
+        "count": 6809,
+        "rate": 0.18656327917363072
+      },
+      {
+        "value": "['D']",
+        "count": 4843,
+        "rate": 0.13269583801408336
+      },
+      {
+        "value": "['A']",
+        "count": 3865,
+        "rate": 0.10589911499575308
+      },
+      {
+        "value": "['B)']",
+        "count": 1358,
+        "rate": 0.037208537688029154
+      },
+      {
+        "value": "['C)']",
+        "count": 599,
+        "rate": 0.016412307860920076
+      },
+      {
+        "value": "['A)']",
+        "count": 531,
+        "rate": 0.01454914102528975
+      },
+      {
+        "value": "['[title']",
+        "count": 131,
+        "rate": 0.0035893361098172454
+      }
+    ],
+    "claude-v1|model_response": [
+      {
+        "value": "['B']",
+        "count": 9344,
+        "rate": 0.2560210428254377
+      },
+      {
+        "value": "['C']",
+        "count": 7688,
+        "rate": 0.21064745047538153
+      },
+      {
+        "value": "['A']",
+        "count": 5816,
+        "rate": 0.1593555634709702
+      },
+      {
+        "value": "['D']",
+        "count": 3949,
+        "rate": 0.1082006740280023
+      },
+      {
+        "value": "['N-A']",
+        "count": 162,
+        "rate": 0.004438720990766364
+      },
+      {
+        "value": "['Yes.']",
+        "count": 75,
+        "rate": 0.0020549634216510946
+      },
+      {
+        "value": "['李白']",
+        "count": 52,
+        "rate": 0.0014247746390114256
+      },
+      {
+        "value": "['B)']",
+        "count": 33,
+        "rate": 0.0009041839055264816
+      }
+    ],
+    "claude-v2|model_response": [
+      {
+        "value": "['C']",
+        "count": 9094,
+        "rate": 0.2491711647532674
+      },
+      {
+        "value": "['B']",
+        "count": 7594,
+        "rate": 0.2080718963202455
+      },
+      {
+        "value": "['D']",
+        "count": 5528,
+        "rate": 0.15146450393183
+      },
+      {
+        "value": "['A']",
+        "count": 4136,
+        "rate": 0.1133243828259857
+      },
+      {
+        "value": "['I apologize']",
+        "count": 173,
+        "rate": 0.004740115625941858
+      },
+      {
+        "value": "['B)']",
+        "count": 103,
+        "rate": 0.00282214976573417
+      },
+      {
+        "value": "['I do']",
+        "count": 75,
+        "rate": 0.0020549634216510946
+      },
+      {
+        "value": "['C)']",
+        "count": 52,
+        "rate": 0.0014247746390114256
+      }
+    ],
+    "gpt-4-1106-preview|model_response": [
+      {
+        "value": "['C']",
+        "count": 5010,
+        "rate": 0.1372715565662931
+      },
+      {
+        "value": "['B']",
+        "count": 4965,
+        "rate": 0.13603857851330245
+      },
+      {
+        "value": "['D']",
+        "count": 4961,
+        "rate": 0.13592898046414773
+      },
+      {
+        "value": "['A)']",
+        "count": 4062,
+        "rate": 0.11129681891662328
+      },
+      {
+        "value": "['A']",
+        "count": 3170,
+        "rate": 0.0868564539551196
+      },
+      {
+        "value": "['B)']",
+        "count": 2489,
+        "rate": 0.06819738608652766
+      },
+      {
+        "value": "['C)']",
+        "count": 1514,
+        "rate": 0.04148286160506343
+      },
+      {
+        "value": "['D)']",
+        "count": 640,
+        "rate": 0.017535687864756008
+      }
+    ],
+    "meta/llama-2-70b-chat|model_response": [
+      {
+        "value": "['\\nAnswer']",
+        "count": 13003,
+        "rate": 0.35627585828972247
+      },
+      {
+        "value": "['B']",
+        "count": 2691,
+        "rate": 0.07373208756884128
+      },
+      {
+        "value": "['C']",
+        "count": 2300,
+        "rate": 0.0630188782639669
+      },
+      {
+        "value": "['B)']",
+        "count": 1638,
+        "rate": 0.04488040112885991
+      },
+      {
+        "value": "['B\\n']",
+        "count": 1142,
+        "rate": 0.031290243033674
+      },
+      {
+        "value": "['A']",
+        "count": 962,
+        "rate": 0.026358330821711372
+      },
+      {
+        "value": "['A)']",
+        "count": 875,
+        "rate": 0.023974573252596103
+      },
+      {
+        "value": "['C)']",
+        "count": 783,
+        "rate": 0.02145381812203743
+      }
+    ],
+    "mistralai/mixtral-8x7b-chat|model_response": [
+      {
+        "value": "['A)']",
+        "count": 8123,
+        "rate": 0.2225662383209579
+      },
+      {
+        "value": "['B)']",
+        "count": 4579,
+        "rate": 0.1254623667698715
+      },
+      {
+        "value": "['D)']",
+        "count": 4182,
+        "rate": 0.11458476039126504
+      },
+      {
+        "value": "['C)']",
+        "count": 3568,
+        "rate": 0.09776145984601474
+      },
+      {
+        "value": "['A\\n']",
+        "count": 1687,
+        "rate": 0.04622297723100529
+      },
+      {
+        "value": "['\\nA']",
+        "count": 1102,
+        "rate": 0.03019426254212675
+      },
+      {
+        "value": "['\\nC']",
+        "count": 927,
+        "rate": 0.02539934789160753
+      },
+      {
+        "value": "['\\nB']",
+        "count": 594,
+        "rate": 0.01627531029947667
+      }
+    ],
+    "zero-one-ai/Yi-34B-Chat|model_response": [
+      {
+        "value": "['C']",
+        "count": 7344,
+        "rate": 0.20122201824807517
+      },
+      {
+        "value": "['A']",
+        "count": 5413,
+        "rate": 0.14831356001863166
+      },
+      {
+        "value": "['D']",
+        "count": 3543,
+        "rate": 0.09707647203879771
+      },
+      {
+        "value": "['B']",
+        "count": 3327,
+        "rate": 0.09115817738444255
+      },
+      {
+        "value": "['\\nB']",
+        "count": 1751,
+        "rate": 0.04797654601748089
+      },
+      {
+        "value": "['\\nC']",
+        "count": 1613,
+        "rate": 0.044195413321642875
+      },
+      {
+        "value": "['\\nA']",
+        "count": 1556,
+        "rate": 0.042633641121188046
+      },
+      {
+        "value": "['\\nD']",
+        "count": 1531,
+        "rate": 0.04194865331397101
+      }
+    ],
+    "WizardLM/WizardLM-13B-V1.2|model_response": [
+      {
+        "value": "['\\nB']",
+        "count": 6182,
+        "rate": 0.16938378496862755
+      },
+      {
+        "value": "['A)']",
+        "count": 6099,
+        "rate": 0.167109625448667
+      },
+      {
+        "value": "['\\nA']",
+        "count": 4110,
+        "rate": 0.11261199550647999
+      },
+      {
+        "value": "['B)']",
+        "count": 3010,
+        "rate": 0.08247253198893059
+      },
+      {
+        "value": "['\\nC']",
+        "count": 2160,
+        "rate": 0.05918294654355152
+      },
+      {
+        "value": "['A']",
+        "count": 2157,
+        "rate": 0.05910074800668548
+      },
+      {
+        "value": "['\\nD']",
+        "count": 1007,
+        "rate": 0.02759130887470203
+      },
+      {
+        "value": "['C)']",
+        "count": 978,
+        "rate": 0.026796723018330273
+      }
+    ],
+    "meta/code-llama-instruct-34b-chat|model_response": [
+      {
+        "value": "['\\nAnswer']",
+        "count": 11990,
+        "rate": 0.32852015234128834
+      },
+      {
+        "value": "['A)']",
+        "count": 9523,
+        "rate": 0.26092555552511165
+      },
+      {
+        "value": "['\\nComment']",
+        "count": 1562,
+        "rate": 0.04279803819492013
+      },
+      {
+        "value": "['\\nA']",
+        "count": 638,
+        "rate": 0.017480888840178645
+      },
+      {
+        "value": "['\\nWhat']",
+        "count": 382,
+        "rate": 0.010466613694276242
+      },
+      {
+        "value": "['\\nThe']",
+        "count": 308,
+        "rate": 0.008439049784913829
+      },
+      {
+        "value": "['\\nThis']",
+        "count": 235,
+        "rate": 0.006438885387840096
+      },
+      {
+        "value": "['\\n[']",
+        "count": 229,
+        "rate": 0.006274488314108009
+      }
+    ],
+    "mistralai/mistral-7b-chat|model_response": [
+      {
+        "value": "['A)']",
+        "count": 12417,
+        "rate": 0.3402197440885552
+      },
+      {
+        "value": "['\\nA']",
+        "count": 11040,
+        "rate": 0.3024906156670411
+      },
+      {
+        "value": "['\\nComment']",
+        "count": 1901,
+        "rate": 0.05208647286078308
+      },
+      {
+        "value": "['\\nC']",
+        "count": 285,
+        "rate": 0.0078088610022741594
+      },
+      {
+        "value": "['\\nAn']",
+        "count": 243,
+        "rate": 0.0066580814861495466
+      },
+      {
+        "value": "['\\nD']",
+        "count": 176,
+        "rate": 0.004822314162807902
+      },
+      {
+        "value": "['\\nB']",
+        "count": 154,
+        "rate": 0.0042195248924569145
+      },
+      {
+        "value": "['C)']",
+        "count": 123,
+        "rate": 0.0033701400115077954
+      }
+    ],
+    "oracle_model_to_route_to": [
+      {
+        "value": "mistralai/mistral-7b-chat",
+        "count": 10065,
+        "rate": 0.2757760911855769
+      },
+      {
+        "value": "WizardLM/WizardLM-13B-V1.2",
+        "count": 8342,
+        "rate": 0.22856673151217907
+      },
+      {
+        "value": "mistralai/mixtral-8x7b-chat",
+        "count": 6140,
+        "rate": 0.16823300545250294
+      },
+      {
+        "value": "zero-one-ai/Yi-34B-Chat",
+        "count": 5309,
+        "rate": 0.14546401074060883
+      },
+      {
+        "value": "claude-instant-v1",
+        "count": 1580,
+        "rate": 0.04329122941611639
+      },
+      {
+        "value": "no_model_correct",
+        "count": 1308,
+        "rate": 0.03583856207359509
+      },
+      {
+        "value": "gpt-3.5-turbo-1106",
+        "count": 1069,
+        "rate": 0.02929007863660027
+      },
+      {
+        "value": "gpt-4-1106-preview",
+        "count": 771,
+        "rate": 0.02112502397457325
+      }
+    ]
+  },
+  "sample_value_by_column": {
+    "sample_id": [
+      "Chinese_character_riddles.dev.0",
+      "Chinese_character_riddles.dev.1",
+      "Chinese_character_riddles.dev.10"
+    ],
+    "prompt": [
+      "['猜字谜，根据我给的描述猜出一个字(请从汉字的字形、发音、意义以及字的拆分组合等角度考虑)。首先提供你的推理，然后提供用英文方括号括[]起来的最终答案。', '古字刚分开，豆字挤进来，你先别生气，看后笑开怀。']",
+      "['猜字谜，根据我给的描述猜出一个字(请从汉字的字形、发音、意义以及字的拆分组合等角度考虑)。首先提供你的推理，然后提供用英文方括号括[]起来的最终答案。', '严禁烟火']",
+      "['猜字谜，根据我给的描述猜出一个字(请从汉字的字形、发音、意义以及字的拆分组合等角度考虑)。首先提供你的推理，然后提供用英文方括号括[]起来的最终答案。', '海边无水，种树一棵，开花没叶，会结酸果。']"
+    ],
+    "eval_name": [
+      "Chinese_character_riddles",
+      "Chinese_character_riddles",
+      "Chinese_character_riddles"
+    ],
+    "WizardLM/WizardLM-13B-V1.2": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "claude-instant-v1": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "claude-v1": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "claude-v2": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gpt-3.5-turbo-1106": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gpt-4-1106-preview": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "meta/code-llama-instruct-34b-chat": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "meta/llama-2-70b-chat": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mistralai/mistral-7b-chat": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mistralai/mixtral-8x7b-chat": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero-one-ai/Yi-34B-Chat": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gpt-3.5-turbo-1106|model_response": [
+      "['这个字谜描述了一个汉字的构造和意义。根据描述，可以推测这个字包含有古代的“刚”字，后来有了“豆”字的部分，两个部分组成的字的意思可能与“生气”和“笑开怀”有关。结合“刚”字和“豆”字，“刚”可能代表坚强或平直，“豆”可能代表豆类食物或豆的形状。因此，根据这些线索，这个字可能是“瞿” [瞿]。根据《说文解字》，瞿的本义是牛鼻子上的肉或脂肪，后来引申为“豫笑...(truncated)",
+      "['这个字是由“火”和“严”组成的。描述意思是“严格禁止点火或燃烧”。根据描述，这个字是“禁”[禁]。']",
+      "['根据描述，这个字是\"枇杷\"。\"海边无水\"指的是枇杷树喜欢生长在干燥的地方，\"种树一棵\"指代字的结构，\"开花没叶\"指的是枇杷开花时叶子已经落完，\"会结酸果\"指的是枇杷会结果实成为酸甜可口的果实。[\"枇杷\"]']"
+    ],
+    "claude-instant-v1|model_response": [
+      "['[笑]']",
+      "['[禁] 步骤一:考虑字形,有\"禁\"字的可能。步骤二:考虑意义,表示禁止的意思。步骤三:综合上述信息,我的推理是\"禁\"这个字。']",
+      "['[海] \\n推理:\\n1.海边,暗示与海有关\\n2.无水,表明不是液体类词\\n3.种树一棵,表明是一个物体\\n4.开花,表明是一个有花的物体\\n5.没叶,没有叶子\\n6.会结酸果,果实酸涩']"
+    ],
+    "claude-v1|model_response": [
+      "['这个字谜的描述涉及到古字的拆分和组合,豆字的插入,以及产生的意思让人笑开怀。考虑到这些因素,我的推理是:\\n\\n原来的古字拆开后,中间插入了“豆”字,组成的新字让人觉得很有趣,让人笑起来。那么这个新字很可能是“豆”字和“开”字组合,因为“开怀”意为开心地笑。所以我猜测这个字谜要表达的字是:[开]']",
+      "['这个字谜的描述似乎与“禁”字有关。“禁”字由“止”和“火”两部分组成,意思是“不许,不允许”。考虑到描述中提到“严禁”和“烟火”,很有可能这个字谜的答案就是“禁”字。\\n\\n[禁]']",
+      "['海边无水,让我联想到沙漠。种树一棵,开花没叶,会结酸果,让我想到仙人掌。所以我猜这个字是[仙]。']"
+    ],
+    "claude-v2|model_response": [
+      "['好的,让我试着分析一下这个猜字谜的提示。\\n\\n\"古字刚分开\"可能指的是一个古老的字被拆分开来。\"豆字挤进来\"意味着这个字中包含了\"豆\"这个字。\"你先别生气\"暗示这个字的意思可能首先让人不高兴。\"看后笑开怀\"则表示当看清这个字的真正意思后会让人笑出来或高兴。\\n\\n结合这些提示,我猜测这个字可能是[豆腐]。因为它包含了\"豆\"字,而字面意思可能让人先想到腐...(truncated)",
+      "['好的,让我试着猜猜这个字谜。\\n\\n根据\"严禁烟火\"这个描述,我首先联想到这可能与禁止吸烟或禁止燃放烟花相关。\\n\\n从字形上分析,这个字看起来可能由\"禁\"和另一个表示\"火\"的字组成。\\n\\n从发音上,它可能发音为“jin”。\\n\\n从意义上,它表示禁止或不允许火或者与火相关的事物。\\n\\n综合这些信息,我猜这个字是[禁火]。']",
+      "['海边无水,可能指的是海边的沙滩。种树一棵,开花没叶,似乎在描述一种树。这种树会结酸果,那么它可能是某种果树。从字形上看,它是一个上下结构的字,上部分可能表示树或植物,下部分表示果实。\\n\\n我的猜测是:\\n[棗]']"
+    ],
+    "gpt-4-1106-preview|model_response": [
+      "['这个字谜描述了一个汉字的形成。首先，“古字刚分开”提示我们这个字可能与“古”有关，且“古”字在这里是被分开的。“豆字挤进来”表示“豆”这个字的某个部分被插入到了上述“古”的分开之中。\\n\\n汉字中，“古”的繁体字是“古”，分开后我们可以想象它成为两个部分。而“豆”字通常可以被拆分为“一”、“丨”和“口”。如果将“豆”的“口”部分，即代表豆字的口形部分放入...(truncated)",
+      "['这个谜面提到了\"严禁烟火\"，从这句话里可以联想到的是与“火”相关的禁止标识，也就是常见的禁止火种、防火安全的意思。其中，“烟火”两个字可以联想到与“火”相关的汉字。\\n\\n字形角度可以想到汉字中包含“火”字偏旁的，如“炎”、“煮”、“熟”等；而从字的拆分组合来看，“烟”字可以拆分为“因”加上“火”，可以想到的是\"因\"和\"火\"共同组成的汉字。\\n\\n综合考...(truncated)",
+      "['根据提供的描述来看：\\n- 海边无水：首先“海边”容易让人联想到“海”，无水可能意指没有了水的“海”字部分。\\n- 种树一棵：种树可关联到树木的\"木\"字。\\n- 开花没叶：有花而没有叶子可能暗示着花的形状而去掉了表示叶子或绿色的部分。\\n- 会结酸果：这个信息可能跟字的意义有关，但也可能跟字的发音有关，暗示了可能跟“酸”字相联系。\\n\\n分析上述线索，汉...(truncated)"
+    ],
+    "meta/llama-2-70b-chat|model_response": [
+      "[' Based on the description you provided, my first impression is that the character could be 悟 (wù) or 吴 (wú).\\n\\n悟 has a similar component as 古 (gǔ) and 豆 (dòu) and means \"to comp...(truncated)",
+      "[' Based on the description \"严禁烟火\" (yán jìn yān huǒ), I would guess that the character you\\'re thinking of is \"烟\" (yān).\\n\\nHere\\'s my reasoning:\\n\\n1. 烟 (yān) is a character that ...(truncated)",
+      "[' My deduction:\\n\\nFrom the description, we can infer that the word is a plant that grows near the sea, has a tree-like structure, produces flowers without leaves, and bears sour ...(truncated)"
+    ],
+    "mistralai/mixtral-8x7b-chat|model_response": [
+      "['Based on the description, it seems like the character might be a combination of two other characters. The first part is described as \"古字刚分开\", which could mean the shape is simila...(truncated)",
+      "['根据描述，\"严禁烟火\" 是一个警示或规定，字形上既包含字谜，同时也具有明确的语意。\\n\\n首先，考虑到 \"严\" 字的形状，它是一个左上右下的笔顺，笔画数为4，在古代也有象形文字的特征。\\n\\n其次，考虑到 \"禁\" 字，它表示禁止、禁guard，笔画数为6，左右对称。\\n\\n综合考虑，可以得出以下推理：\\n\\n- 字形上，考虑到左上右下和左右对称的特征，可...(truncated)",
+      "['Based on the description, I would guess the answer is 榕（róng, banyan tree). The reasoning behind this is:\\n\\n1. The first hint, \"海边无水\" (hǎi biān wú shuǐ, at the sea without water...(truncated)"
+    ],
+    "zero-one-ai/Yi-34B-Chat|model_response": [
+      "['\\n推理：\\n1. 古字刚分开：这个描述可能暗示着我们要找的字是由“古”字去掉一部分得到的。\\n2. 豆字挤进来：这表明可能与“豆”字有关，或者“豆”字的一部分会组合在这个字中。\\n3. 你先别生气：这可能意味着这个字在字面上看起来像是在表达生气或不愉快的意思，但实际上有相反的含义。\\n4. 看后笑开怀：这说明这个字在实际应用中通常会带来积极的情绪反应。...(truncated)",
+      "['推理：\\n1. 字形：这个字由两个部分组成，左边是一个“火”字，右边是一个“令”字。\\n2. 发音：根据描述，这个字应该是一个汉语词汇，且发音与“严禁烟火”这四个字中的某个字相同或相近。\\n3. 意义：这个字的意思与禁止或命令有关，可能是指禁止烟火，或者是指命令禁止烟火。\\n4. 字的拆分组合：这个字是由“火”和“令”两个字组合而成的。\\n\\n最终答案：...(truncated)",
+      "['\\n推理：\\n1. 海边无水：这个字可能与“海”有关，但又不直接是“海”字。\\n2. 种树一棵：这个字可能包含树木的元素。\\n3. 开花没叶：这个字在开花的时候没有叶子，可能意味着它是一个形声字，声旁表示开花的声音。\\n4. 会结酸果：这个字会结出酸味的果实，可能与“酸”字有关。\\n\\n最终答案：[梅]']"
+    ],
+    "WizardLM/WizardLM-13B-V1.2|model_response": [
+      "['根据描述，我推测这个谜题的答案可能是“豆”。\\n\\n1. 汉字的字形：\"豆\"字的形状像是一个圆形的\"刚\"字，但是中间有一个\"豆\"字被填入。\\n2. 发音：\"豆\"字的发音是\"dòu\"，与描述中提到的\"刚\"字的发音相吻合。\\n3. 意义：\"豆\"字的意义是豆子，与描述中提到的\"生气\"和\"笑\"相符。\\n4. 字的拆分组合：\"豆\"字是汉字中的一个常用的拆字，可以拆...(truncated)",
+      "['根据您的描述，我推测这个字可能是一个对烟火的禁令，或者是禁止某种娱乐活动的词。\\n\\n这个字可能包含以下几个部分：\\n\\n1. 一个禁止或禁止的意思的字，比如 \"禁\"。\\n2. 一个火焰或烟的意思的字，比如 \"火\"。\\n3. 一个可能是活动或娱乐的意思的字，比如 \"火花\"。\\n\\n猜测答案：禁火[smoking]']",
+      "['Based on your description, the word I\\'m thinking of is \"樱桃\" (Yīngtáo).\\n\\nHere\\'s my reasoning:\\n\\n1. 字形: The description mentions \"一棵\" (one tree) and \"开花\" (blooming flowers). T...(truncated)"
+    ],
+    "meta/code-llama-instruct-34b-chat|model_response": [
+      "[' Based on the description, I would guess that the word is \"刚\" (gāng) which means \"hard\" or \"firm\".\\n\\nThe word \"刚\" is a compound of two characters: \"豆\" (dòu) meaning \"bean\" and \"...(truncated)",
+      "[' 我的推理是：\\n\\n这个字可能是一个词，因为它有一个明显的上部和下部。它的上部可能是一个\"严\"字，而下部可能是一个\"禁\"字。\\n\\n最终答案是：[严禁]']",
+      "[' 此谜句描述了一个生长在海边的植物，它没有叶子，但会开花和结果，这些结果是酸的。根据这些描述，我们可以推断出这个植物可能是一种海棘（Sea Cucumber）。\\n\\n[Sea Cucumber]']"
+    ],
+    "mistralai/mistral-7b-chat|model_response": [
+      "['The character being guessed is \"挤\" (dòu).\\n\\nThe reasoning behind this is that the character is a radical for \"挤\" (dòu), which means \"to squeeze\" or \"to press.\" The description g...(truncated)",
+      "['我的推理是：\\n\\n根据字形和字的拆分组合，我猜测字是\"禁\"字。\\n\\n字形：禁字的字形是一个字段，字体是正常的，字体大小是正常的，字符串是正常的，字符间距是正常的。\\n\\n字的拆分组合：禁字的字的拆分组合是一个字段，字字符串是\"禁\"，字字符间距是正常的。\\n\\n根据字形和字的拆分组合我猜测字是\"禁\"字。\\n\\n最终答案：[禁]']",
+      "['My guess would be \"lemon\". The description seems to match the character \"柚\" (yàng) in Chinese, which represents a lemon. \"海边无水\" (hǎibiān wúshuǐ) means \"no water at the sea\", \"种树一...(truncated)"
+    ],
+    "gpt-3.5-turbo-1106|total_cost": [
+      0.000527,
+      0.000205,
+      0.000368
+    ],
+    "claude-instant-v1|total_cost": [
+      9.92e-05,
+      0.0002448,
+      0.00032240000000000003
+    ],
+    "claude-v1|total_cost": [
+      0.0049039999999999995,
+      0.003096,
+      0.00248
+    ],
+    "claude-v2|total_cost": [
+      0.006488,
+      0.004704,
+      0.003728
+    ],
+    "gpt-4-1106-preview|total_cost": [
+      0.00973,
+      0.01077,
+      0.011049999999999999
+    ],
+    "meta/llama-2-70b-chat|total_cost": [
+      0.00026639999999999997,
+      0.0002565,
+      0.0002322
+    ],
+    "mistralai/mixtral-8x7b-chat|total_cost": [
+      0.0001662,
+      0.0002268,
+      0.0002154
+    ],
+    "zero-one-ai/Yi-34B-Chat|total_cost": [
+      0.00024960000000000005,
+      0.0002256,
+      0.00021520000000000003
+    ],
+    "WizardLM/WizardLM-13B-V1.2|total_cost": [
+      0.00010259999999999999,
+      7.35e-05,
+      0.000138
+    ],
+    "meta/code-llama-instruct-34b-chat|total_cost": [
+      0.00023590400000000002,
+      0.00012804,
+      0.000149768
+    ],
+    "mistralai/mistral-7b-chat|total_cost": [
+      6.220000000000001e-05,
+      4.96e-05,
+      5.060000000000001e-05
+    ],
+    "oracle_model_to_route_to": [
+      "no_model_correct",
+      "no_model_correct",
+      "zero-one-ai/Yi-34B-Chat"
+    ]
+  },
+  "semantic_groups": {
+    "id_like": [
+      "sample_id",
+      "eval_name"
+    ],
+    "text_like": [
+      "prompt"
+    ],
+    "model_performance": [
+      "WizardLM/WizardLM-13B-V1.2",
+      "claude-instant-v1",
+      "claude-v1",
+      "claude-v2",
+      "gpt-3.5-turbo-1106",
+      "gpt-4-1106-preview",
+      "meta/code-llama-instruct-34b-chat",
+      "meta/llama-2-70b-chat",
+      "mistralai/mistral-7b-chat",
+      "mistralai/mixtral-8x7b-chat",
+      "zero-one-ai/Yi-34B-Chat",
+      "oracle_model_to_route_to"
+    ],
+    "model_response": [
+      "gpt-3.5-turbo-1106|model_response",
+      "claude-instant-v1|model_response",
+      "claude-v1|model_response",
+      "claude-v2|model_response",
+      "gpt-4-1106-preview|model_response",
+      "meta/llama-2-70b-chat|model_response",
+      "mistralai/mixtral-8x7b-chat|model_response",
+      "zero-one-ai/Yi-34B-Chat|model_response",
+      "WizardLM/WizardLM-13B-V1.2|model_response",
+      "meta/code-llama-instruct-34b-chat|model_response",
+      "mistralai/mistral-7b-chat|model_response"
+    ],
+    "model_cost": [
+      "gpt-3.5-turbo-1106|total_cost",
+      "claude-instant-v1|total_cost",
+      "claude-v1|total_cost",
+      "claude-v2|total_cost",
+      "gpt-4-1106-preview|total_cost",
+      "meta/llama-2-70b-chat|total_cost",
+      "mistralai/mixtral-8x7b-chat|total_cost",
+      "zero-one-ai/Yi-34B-Chat|total_cost",
+      "WizardLM/WizardLM-13B-V1.2|total_cost",
+      "meta/code-llama-instruct-34b-chat|total_cost",
+      "mistralai/mistral-7b-chat|total_cost"
+    ],
+    "other": []
+  },
+  "routerbench_like_summary": {
+    "models_detected_count": 11,
+    "models_detected": [
+      "WizardLM/WizardLM-13B-V1.2",
+      "claude-instant-v1",
+      "claude-v1",
+      "claude-v2",
+      "gpt-3.5-turbo-1106",
+      "gpt-4-1106-preview",
+      "meta/code-llama-instruct-34b-chat",
+      "meta/llama-2-70b-chat",
+      "mistralai/mistral-7b-chat",
+      "mistralai/mixtral-8x7b-chat",
+      "zero-one-ai/Yi-34B-Chat"
+    ],
+    "performance_columns_count": 12,
+    "response_columns_count": 11,
+    "cost_columns_count": 11,
+    "model_cost_summary": {
+      "WizardLM/WizardLM-13B-V1.2": {
+        "mean_cost": 7.291440118365893e-05,
+        "median_cost": 5.61e-05
+      },
+      "claude-instant-v1": {
+        "mean_cost": 0.00023293712907910245,
+        "median_cost": 0.000152
+      },
+      "claude-v1": {
+        "mean_cost": 0.0021446553963339453,
+        "median_cost": 0.0015279999999999998
+      },
+      "claude-v2": {
+        "mean_cost": 0.0024186040496479164,
+        "median_cost": 0.00156
+      },
+      "gpt-3.5-turbo-1106": {
+        "mean_cost": 0.00024326004877113185,
+        "median_cost": 0.000188
+      },
+      "gpt-4-1106-preview": {
+        "mean_cost": 0.0032927528289996436,
+        "median_cost": 0.00193
+      },
+      "meta/code-llama-instruct-34b-chat": {
+        "mean_cost": 0.00017204870624982875,
+        "median_cost": 0.00014045599999999998
+      },
+      "meta/llama-2-70b-chat": {
+        "mean_cost": 0.0002026650217826123,
+        "median_cost": 0.00017189999999999998
+      },
+      "mistralai/mistral-7b-chat": {
+        "mean_cost": 4.572428966764392e-05,
+        "median_cost": 3.68e-05
+      },
+      "mistralai/mixtral-8x7b-chat": {
+        "mean_cost": 0.00013457989971778504,
+        "median_cost": 0.00011279999999999999
+      },
+      "zero-one-ai/Yi-34B-Chat": {
+        "mean_cost": 0.00018552225114392966,
+        "median_cost": 0.00014800000000000002
+      }
+    },
+    "model_performance_summary": {}
+  },
+  "sample_rows": [
+    {
+      "sample_id": "Chinese_character_riddles.dev.0",
+      "prompt": "['猜字谜，根据我给的描述猜出一个字(请从汉字的字形、发音、意义以及字的拆分组合等角度考虑)。首先提供你的推理，然后提供用英文方括号括[]起来的最终答案。', '古字刚分开，豆字挤进来，你先别生气，看后笑开怀。']",
+      "eval_name": "Chinese_character_riddles",
+      "WizardLM/WizardLM-13B-V1.2": 0.0,
+      "claude-instant-v1": 0.0,
+      "claude-v1": 0.0,
+      "claude-v2": 0.0,
+      "gpt-3.5-turbo-1106": 0.0,
+      "gpt-4-1106-preview": 0.0,
+      "meta/code-llama-instruct-34b-chat": 0.0,
+      "meta/llama-2-70b-chat": 0.0,
+      "mistralai/mistral-7b-chat": 0.0,
+      "mistralai/mixtral-8x7b-chat": 0.0,
+      "zero-one-ai/Yi-34B-Chat": 0.0,
+      "gpt-3.5-turbo-1106|model_response": "['这个字谜描述了一个汉字的构造和意义。根据描述，可以推测这个字包含有古代的“刚”字，后来有了“豆”字的部分，两个部分组成的字的意思可能与“生气”和“笑开怀”有关。结合“刚”字和“豆”字，“刚”可能代表坚强或平直，“豆”可能代表豆类食物或豆的形状。因此，根据这些线索，这个字可能是“瞿” [瞿]。根据《说文解字》，瞿的本义是牛鼻子上的肉或脂肪，后来引申为“豫笑”的意思。']",
+      "claude-instant-v1|model_response": "['[笑]']",
+      "claude-v1|model_response": "['这个字谜的描述涉及到古字的拆分和组合,豆字的插入,以及产生的意思让人笑开怀。考虑到这些因素,我的推理是:\\n\\n原来的古字拆开后,中间插入了“豆”字,组成的新字让人觉得很有趣,让人笑起来。那么这个新字很可能是“豆”字和“开”字组合,因为“开怀”意为开心地笑。所以我猜测这个字谜要表达的字是:[开]']",
+      "claude-v2|model_response": "['好的,让我试着分析一下这个猜字谜的提示。\\n\\n\"古字刚分开\"可能指的是一个古老的字被拆分开来。\"豆字挤进来\"意味着这个字中包含了\"豆\"这个字。\"你先别生气\"暗示这个字的意思可能首先让人不高兴。\"看后笑开怀\"则表示当看清这个字的真正意思后会让人笑出来或高兴。\\n\\n结合这些提示,我猜测这个字可能是[豆腐]。因为它包含了\"豆\"字,而字面意思可能让人先想到腐烂变质的豆子,但实际上指的却是大家喜爱的食物。\\n\\n[doufu]']",
+      "gpt-4-1106-preview|model_response": "['这个字谜描述了一个汉字的形成。首先，“古字刚分开”提示我们这个字可能与“古”有关，且“古”字在这里是被分开的。“豆字挤进来”表示“豆”这个字的某个部分被插入到了上述“古”的分开之中。\\n\\n汉字中，“古”的繁体字是“古”，分开后我们可以想象它成为两个部分。而“豆”字通常可以被拆分为“一”、“丨”和“口”。如果将“豆”的“口”部分，即代表豆字的口形部分放入“古”的两部分中间，我们就能够组成一个新的字。\\n\\n结合这些线索，我们得到的汉字是“告”，因为“告”是由一个上面的“口...(truncated)",
+      "meta/llama-2-70b-chat|model_response": "[' Based on the description you provided, my first impression is that the character could be 悟 (wù) or 吴 (wú).\\n\\n悟 has a similar component as 古 (gǔ) and 豆 (dòu) and means \"to comprehend\" or \"to understand\".\\n\\n吴 has a similar sound to 豆 (d...(truncated)",
+      "mistralai/mixtral-8x7b-chat|model_response": "['Based on the description, it seems like the character might be a combination of two other characters. The first part is described as \"古字刚分开\", which could mean the shape is similar to an ancient character. The second part is described as \"...(truncated)",
+      "zero-one-ai/Yi-34B-Chat|model_response": "['\\n推理：\\n1. 古字刚分开：这个描述可能暗示着我们要找的字是由“古”字去掉一部分得到的。\\n2. 豆字挤进来：这表明可能与“豆”字有关，或者“豆”字的一部分会组合在这个字中。\\n3. 你先别生气：这可能意味着这个字在字面上看起来像是在表达生气或不愉快的意思，但实际上有相反的含义。\\n4. 看后笑开怀：这说明这个字在实际应用中通常会带来积极的情绪反应。\\n\\n最终答案：【喜】']",
+      "WizardLM/WizardLM-13B-V1.2|model_response": "['根据描述，我推测这个谜题的答案可能是“豆”。\\n\\n1. 汉字的字形：\"豆\"字的形状像是一个圆形的\"刚\"字，但是中间有一个\"豆\"字被填入。\\n2. 发音：\"豆\"字的发音是\"dòu\"，与描述中提到的\"刚\"字的发音相吻合。\\n3. 意义：\"豆\"字的意义是豆子，与描述中提到的\"生气\"和\"笑\"相符。\\n4. 字的拆分组合：\"豆\"字是汉字中的一个常用的拆字，可以拆成\"刚\"和\"豆\"，符合描述中的\"古字刚分开，豆字挤进来\"。\\n\\n因此，我们可以推测答案是\"豆\"。']",
+      "meta/code-llama-instruct-34b-chat|model_response": "[' Based on the description, I would guess that the word is \"刚\" (gāng) which means \"hard\" or \"firm\".\\n\\nThe word \"刚\" is a compound of two characters: \"豆\" (dòu) meaning \"bean\" and \"挤\" (jǐ) meaning \"to squeeze\". The word \"刚\" is used to descri...(truncated)",
+      "mistralai/mistral-7b-chat|model_response": "['The character being guessed is \"挤\" (dòu).\\n\\nThe reasoning behind this is that the character is a radical for \"挤\" (dòu), which means \"to squeeze\" or \"to press.\" The description given in the riddle matches this meaning, as it describes the...(truncated)",
+      "gpt-3.5-turbo-1106|total_cost": 0.000527,
+      "claude-instant-v1|total_cost": 9.92e-05,
+      "claude-v1|total_cost": 0.0049039999999999995,
+      "claude-v2|total_cost": 0.006488,
+      "gpt-4-1106-preview|total_cost": 0.00973,
+      "meta/llama-2-70b-chat|total_cost": 0.00026639999999999997,
+      "mistralai/mixtral-8x7b-chat|total_cost": 0.0001662,
+      "zero-one-ai/Yi-34B-Chat|total_cost": 0.00024960000000000005,
+      "WizardLM/WizardLM-13B-V1.2|total_cost": 0.00010259999999999999,
+      "meta/code-llama-instruct-34b-chat|total_cost": 0.00023590400000000002,
+      "mistralai/mistral-7b-chat|total_cost": 6.220000000000001e-05,
+      "oracle_model_to_route_to": "no_model_correct"
+    },
+    {
+      "sample_id": "Chinese_character_riddles.dev.1",
+      "prompt": "['猜字谜，根据我给的描述猜出一个字(请从汉字的字形、发音、意义以及字的拆分组合等角度考虑)。首先提供你的推理，然后提供用英文方括号括[]起来的最终答案。', '严禁烟火']",
+      "eval_name": "Chinese_character_riddles",
+      "WizardLM/WizardLM-13B-V1.2": 0.0,
+      "claude-instant-v1": 0.0,
+      "claude-v1": 0.0,
+      "claude-v2": 0.0,
+      "gpt-3.5-turbo-1106": 0.0,
+      "gpt-4-1106-preview": 0.0,
+      "meta/code-llama-instruct-34b-chat": 0.0,
+      "meta/llama-2-70b-chat": 0.0,
+      "mistralai/mistral-7b-chat": 0.0,
+      "mistralai/mixtral-8x7b-chat": 0.0,
+      "zero-one-ai/Yi-34B-Chat": 0.0,
+      "gpt-3.5-turbo-1106|model_response": "['这个字是由“火”和“严”组成的。描述意思是“严格禁止点火或燃烧”。根据描述，这个字是“禁”[禁]。']",
+      "claude-instant-v1|model_response": "['[禁] 步骤一:考虑字形,有\"禁\"字的可能。步骤二:考虑意义,表示禁止的意思。步骤三:综合上述信息,我的推理是\"禁\"这个字。']",
+      "claude-v1|model_response": "['这个字谜的描述似乎与“禁”字有关。“禁”字由“止”和“火”两部分组成,意思是“不许,不允许”。考虑到描述中提到“严禁”和“烟火”,很有可能这个字谜的答案就是“禁”字。\\n\\n[禁]']",
+      "claude-v2|model_response": "['好的,让我试着猜猜这个字谜。\\n\\n根据\"严禁烟火\"这个描述,我首先联想到这可能与禁止吸烟或禁止燃放烟花相关。\\n\\n从字形上分析,这个字看起来可能由\"禁\"和另一个表示\"火\"的字组成。\\n\\n从发音上,它可能发音为“jin”。\\n\\n从意义上,它表示禁止或不允许火或者与火相关的事物。\\n\\n综合这些信息,我猜这个字是[禁火]。']",
+      "gpt-4-1106-preview|model_response": "['这个谜面提到了\"严禁烟火\"，从这句话里可以联想到的是与“火”相关的禁止标识，也就是常见的禁止火种、防火安全的意思。其中，“烟火”两个字可以联想到与“火”相关的汉字。\\n\\n字形角度可以想到汉字中包含“火”字偏旁的，如“炎”、“煮”、“熟”等；而从字的拆分组合来看，“烟”字可以拆分为“因”加上“火”，可以想到的是\"因\"和\"火\"共同组成的汉字。\\n\\n综合考虑，“严禁烟火”可能在暗示包含“火”这个部首，同时和“因”结合的汉字。因此，最符合描述的字可能是“炎”，因为它由两个“火...(truncated)",
+      "meta/llama-2-70b-chat|model_response": "[' Based on the description \"严禁烟火\" (yán jìn yān huǒ), I would guess that the character you\\'re thinking of is \"烟\" (yān).\\n\\nHere\\'s my reasoning:\\n\\n1. 烟 (yān) is a character that means \"smoke\" or \"mist,\" which fits with the theme of fire a...(truncated)",
+      "mistralai/mixtral-8x7b-chat|model_response": "['根据描述，\"严禁烟火\" 是一个警示或规定，字形上既包含字谜，同时也具有明确的语意。\\n\\n首先，考虑到 \"严\" 字的形状，它是一个左上右下的笔顺，笔画数为4，在古代也有象形文字的特征。\\n\\n其次，考虑到 \"禁\" 字，它表示禁止、禁guard，笔画数为6，左右对称。\\n\\n综合考虑，可以得出以下推理：\\n\\n- 字形上，考虑到左上右下和左右对称的特征，可以猜测答案中包含这两个部分。\\n- 发音上，\"严\" 和 \"禁\" 都是单音节字，发音简单。\\n- 语意上，\"严禁\" 表示强...(truncated)",
+      "zero-one-ai/Yi-34B-Chat|model_response": "['推理：\\n1. 字形：这个字由两个部分组成，左边是一个“火”字，右边是一个“令”字。\\n2. 发音：根据描述，这个字应该是一个汉语词汇，且发音与“严禁烟火”这四个字中的某个字相同或相近。\\n3. 意义：这个字的意思与禁止或命令有关，可能是指禁止烟火，或者是指命令禁止烟火。\\n4. 字的拆分组合：这个字是由“火”和“令”两个字组合而成的。\\n\\n最终答案：[禁]']",
+      "WizardLM/WizardLM-13B-V1.2|model_response": "['根据您的描述，我推测这个字可能是一个对烟火的禁令，或者是禁止某种娱乐活动的词。\\n\\n这个字可能包含以下几个部分：\\n\\n1. 一个禁止或禁止的意思的字，比如 \"禁\"。\\n2. 一个火焰或烟的意思的字，比如 \"火\"。\\n3. 一个可能是活动或娱乐的意思的字，比如 \"火花\"。\\n\\n猜测答案：禁火[smoking]']",
+      "meta/code-llama-instruct-34b-chat|model_response": "[' 我的推理是：\\n\\n这个字可能是一个词，因为它有一个明显的上部和下部。它的上部可能是一个\"严\"字，而下部可能是一个\"禁\"字。\\n\\n最终答案是：[严禁]']",
+      "mistralai/mistral-7b-chat|model_response": "['我的推理是：\\n\\n根据字形和字的拆分组合，我猜测字是\"禁\"字。\\n\\n字形：禁字的字形是一个字段，字体是正常的，字体大小是正常的，字符串是正常的，字符间距是正常的。\\n\\n字的拆分组合：禁字的字的拆分组合是一个字段，字字符串是\"禁\"，字字符间距是正常的。\\n\\n根据字形和字的拆分组合我猜测字是\"禁\"字。\\n\\n最终答案：[禁]']",
+      "gpt-3.5-turbo-1106|total_cost": 0.000205,
+      "claude-instant-v1|total_cost": 0.0002448,
+      "claude-v1|total_cost": 0.003096,
+      "claude-v2|total_cost": 0.004704,
+      "gpt-4-1106-preview|total_cost": 0.01077,
+      "meta/llama-2-70b-chat|total_cost": 0.0002565,
+      "mistralai/mixtral-8x7b-chat|total_cost": 0.0002268,
+      "zero-one-ai/Yi-34B-Chat|total_cost": 0.0002256,
+      "WizardLM/WizardLM-13B-V1.2|total_cost": 7.35e-05,
+      "meta/code-llama-instruct-34b-chat|total_cost": 0.00012804,
+      "mistralai/mistral-7b-chat|total_cost": 4.96e-05,
+      "oracle_model_to_route_to": "no_model_correct"
+    },
+    {
+      "sample_id": "Chinese_character_riddles.dev.10",
+      "prompt": "['猜字谜，根据我给的描述猜出一个字(请从汉字的字形、发音、意义以及字的拆分组合等角度考虑)。首先提供你的推理，然后提供用英文方括号括[]起来的最终答案。', '海边无水，种树一棵，开花没叶，会结酸果。']",
+      "eval_name": "Chinese_character_riddles",
+      "WizardLM/WizardLM-13B-V1.2": 0.0,
+      "claude-instant-v1": 0.0,
+      "claude-v1": 0.0,
+      "claude-v2": 0.0,
+      "gpt-3.5-turbo-1106": 0.0,
+      "gpt-4-1106-preview": 0.0,
+      "meta/code-llama-instruct-34b-chat": 0.0,
+      "meta/llama-2-70b-chat": 0.0,
+      "mistralai/mistral-7b-chat": 0.0,
+      "mistralai/mixtral-8x7b-chat": 0.0,
+      "zero-one-ai/Yi-34B-Chat": 1.0,
+      "gpt-3.5-turbo-1106|model_response": "['根据描述，这个字是\"枇杷\"。\"海边无水\"指的是枇杷树喜欢生长在干燥的地方，\"种树一棵\"指代字的结构，\"开花没叶\"指的是枇杷开花时叶子已经落完，\"会结酸果\"指的是枇杷会结果实成为酸甜可口的果实。[\"枇杷\"]']",
+      "claude-instant-v1|model_response": "['[海] \\n推理:\\n1.海边,暗示与海有关\\n2.无水,表明不是液体类词\\n3.种树一棵,表明是一个物体\\n4.开花,表明是一个有花的物体\\n5.没叶,没有叶子\\n6.会结酸果,果实酸涩']",
+      "claude-v1|model_response": "['海边无水,让我联想到沙漠。种树一棵,开花没叶,会结酸果,让我想到仙人掌。所以我猜这个字是[仙]。']",
+      "claude-v2|model_response": "['海边无水,可能指的是海边的沙滩。种树一棵,开花没叶,似乎在描述一种树。这种树会结酸果,那么它可能是某种果树。从字形上看,它是一个上下结构的字,上部分可能表示树或植物,下部分表示果实。\\n\\n我的猜测是:\\n[棗]']",
+      "gpt-4-1106-preview|model_response": "['根据提供的描述来看：\\n- 海边无水：首先“海边”容易让人联想到“海”，无水可能意指没有了水的“海”字部分。\\n- 种树一棵：种树可关联到树木的\"木\"字。\\n- 开花没叶：有花而没有叶子可能暗示着花的形状而去掉了表示叶子或绿色的部分。\\n- 会结酸果：这个信息可能跟字的意义有关，但也可能跟字的发音有关，暗示了可能跟“酸”字相联系。\\n\\n分析上述线索，汉字的左边可能跟“海”有关但去掉了表示水的部分，右边应该有一个跟树木相关的“木”字。根据这个线索，我们可以联想到的可能是“...(truncated)",
+      "meta/llama-2-70b-chat|model_response": "[' My deduction:\\n\\nFrom the description, we can infer that the word is a plant that grows near the sea, has a tree-like structure, produces flowers without leaves, and bears sour fruit.\\n\\nPossible candidates:\\n\\n1. 柑橘 (gān juǎn) - A citru...(truncated)",
+      "mistralai/mixtral-8x7b-chat|model_response": "['Based on the description, I would guess the answer is 榕（róng, banyan tree). The reasoning behind this is:\\n\\n1. The first hint, \"海边无水\" (hǎi biān wú shuǐ, at the sea without water), may refer to the aerial roots of the banyan tree, which c...(truncated)",
+      "zero-one-ai/Yi-34B-Chat|model_response": "['\\n推理：\\n1. 海边无水：这个字可能与“海”有关，但又不直接是“海”字。\\n2. 种树一棵：这个字可能包含树木的元素。\\n3. 开花没叶：这个字在开花的时候没有叶子，可能意味着它是一个形声字，声旁表示开花的声音。\\n4. 会结酸果：这个字会结出酸味的果实，可能与“酸”字有关。\\n\\n最终答案：[梅]']",
+      "WizardLM/WizardLM-13B-V1.2|model_response": "['Based on your description, the word I\\'m thinking of is \"樱桃\" (Yīngtáo).\\n\\nHere\\'s my reasoning:\\n\\n1. 字形: The description mentions \"一棵\" (one tree) and \"开花\" (blooming flowers). The tree in question has a unique shape, with a single trunk ...(truncated)",
+      "meta/code-llama-instruct-34b-chat|model_response": "[' 此谜句描述了一个生长在海边的植物，它没有叶子，但会开花和结果，这些结果是酸的。根据这些描述，我们可以推断出这个植物可能是一种海棘（Sea Cucumber）。\\n\\n[Sea Cucumber]']",
+      "mistralai/mistral-7b-chat|model_response": "['My guess would be \"lemon\". The description seems to match the character \"柚\" (yàng) in Chinese, which represents a lemon. \"海边无水\" (hǎibiān wúshuǐ) means \"no water at the sea\", \"种树一棵\" (zhòngshù yī táng) means \"planting one tree\", \"开花没叶\" (kāi...(truncated)",
+      "gpt-3.5-turbo-1106|total_cost": 0.000368,
+      "claude-instant-v1|total_cost": 0.00032240000000000003,
+      "claude-v1|total_cost": 0.00248,
+      "claude-v2|total_cost": 0.003728,
+      "gpt-4-1106-preview|total_cost": 0.011049999999999999,
+      "meta/llama-2-70b-chat|total_cost": 0.0002322,
+      "mistralai/mixtral-8x7b-chat|total_cost": 0.0002154,
+      "zero-one-ai/Yi-34B-Chat|total_cost": 0.00021520000000000003,
+      "WizardLM/WizardLM-13B-V1.2|total_cost": 0.000138,
+      "meta/code-llama-instruct-34b-chat|total_cost": 0.000149768,
+      "mistralai/mistral-7b-chat|total_cost": 5.060000000000001e-05,
+      "oracle_model_to_route_to": "zero-one-ai/Yi-34B-Chat"
+    },
+    {
+      "sample_id": "Chinese_character_riddles.dev.11",
+      "prompt": "['猜字谜，根据我给的描述猜出一个字(请从汉字的字形、发音、意义以及字的拆分组合等角度考虑)。首先提供你的推理，然后提供用英文方括号括[]起来的最终答案。', '藏宝盒，方又方，一块玉，放中央。']",
+      "eval_name": "Chinese_character_riddles",
+      "WizardLM/WizardLM-13B-V1.2": 0.0,
+      "claude-instant-v1": 0.0,
+      "claude-v1": 0.0,
+      "claude-v2": 0.0,
+      "gpt-3.5-turbo-1106": 0.0,
+      "gpt-4-1106-preview": 1.0,
+      "meta/code-llama-instruct-34b-chat": 0.0,
+      "meta/llama-2-70b-chat": 0.0,
+      "mistralai/mistral-7b-chat": 0.0,
+      "mistralai/mixtral-8x7b-chat": 0.0,
+      "zero-one-ai/Yi-34B-Chat": 1.0,
+      "gpt-3.5-turbo-1106|model_response": "['根据描述，这个字是两个相同的部首“玉”组成的，也就是“王”字旁，中间夹着“宝”字，所以猜测是“王宝盒”[王]。']",
+      "claude-instant-v1|model_response": "['[fang]']",
+      "claude-v1|model_response": "['这个谜语描述的是一个字,它的字形是方形,读音与“方”相同或近似,意思与“宝物”或“珍贵物品”相关,且这个字由方形构成,中间有一个方形“玉”字。所以我猜测这个字可能是:\\n\\n[珠]']",
+      "claude-v2|model_response": "['您提供的猜字谜提示是:藏宝盒,方又方,一块玉,放中央。\\n\\n从提示中可以看出,这个字形似乎是个方形,里面有一个较小的方形或圆形。它像一个盒子,里面装着宝物。\\n\\n结合这个图像,我推测这个字可能是“匣”。\\n\\n[xiá]\\n\\n“匣”字是一个方形的容器,表示盒子的意思。里面可以放宝物。它的字形也是一个大方形,中央有一个小方形,与提示中的图像吻合。']",
+      "gpt-4-1106-preview|model_response": "['这个字谜描述的内容提到了“藏宝盒”，“方又方”，以及“一块玉，放中央”。我们首先考虑“方又方”可能表示这个字本身是方形的，或者说有很多“方”字形的结构；接着，“一块玉”可以看作是这个字中有“玉”这个字或者与“玉”相关的部分；最后，“放中央”可能是指“玉”字或其相关部分被放在整个字的中间。\\n\\n将这些线索结合起来，我们可以推理出这个字很可能是将“玉”字或类似的部分，放置在一个由多个“方”构成的字框中。考虑到这些线索，我们可以推断出这个字可能是“国”，因为在“国”字的中央有...(truncated)",
+      "meta/llama-2-70b-chat|model_response": "[' Based on your description, I would guess that the character you\\'re thinking of is \"瑰\" (yù).\\n\\nMy reasoning is as follows:\\n\\n* \"藏宝盒\" (cáng bǎo xiāng) means \"treasure box,\" and \"瑰\" (yù) is a character that means \"jade\" or \"precious ston...(truncated)",
+      "mistralai/mixtral-8x7b-chat|model_response": "['Based on the description, I would guess the character is \"格\" (ge). The reason behind this is that the character represents a square or rectangular shape, fitting the description of a \"cang bao he\" (hidden treasure box). The character itse...(truncated)",
+      "zero-one-ai/Yi-34B-Chat|model_response": "['\\n推理：\\n这个字谜描述了一个藏宝盒的形象，它又方又正，里面放着一块玉。我们可以从汉字的字形、发音、意义以及字的拆分组合来考虑。\\n\\n字形：藏宝盒通常都是方形的，所以这个字可能是方形的。\\n发音：谜语中提到了“一块玉”，玉的拼音是 “yu”，我们可以从这个发音上寻找可能的字。\\n意义：藏宝盒是用来藏宝贝的，而“玉”在中文里不仅指玉石，也可以比喻美好的东西。\\n\\n结合以上信息，我们可以推测这个字可能是“国”。因为“国”字是方形的，里面包含了一个“玉”字，而且“国”有国...(truncated)",
+      "WizardLM/WizardLM-13B-V1.2|model_response": "['根据您的描述，我会从以下几个方面进行推理：\\n\\n1. 汉字的字形：您提到的“一块玉”，这可能表示一个圆形的汉字。\\n2. 汉字的发音：“藏宝盒”这个词的发音为“cáng bǎo hú”。\\n3. 汉字的意义：“藏宝盒”是一种用来存放珍贵物品的容器，通常呈圆形，用来象征宝藏。\\n4. 字的拆分组合：假设汉字是“玺”，这个字的含义是“宝石”，它的发音为“yān”，可以与“藏宝盒”的发音“cáng bǎo hú”进行对应。\\n\\n综合以上几个方面，我猜测您想要的汉字是“玺”。...(truncated)",
+      "meta/code-llama-instruct-34b-chat|model_response": "[' Based on the description, I would guess that the word is 珍 [珍] (zhēn), which means \"precious\" or \"valuable\".\\n\\nThe word 珍 is a four-stroke character, with the top stroke being a 宀 [宀] (jiǎn) and the bottom stroke being a 又 [又] (yòu). Th...(truncated)",
+      "mistralai/mistral-7b-chat|model_response": "['My guess is that the word is \"盒子 [baoxi]\". \\n\\nThe reasoning behind this is that the description mentions a \"藏宝盒\" which means a treasure box, and it is described as being \"方又方\" which means square. Additionally, the word \"一块玉\" (yī bù yú) m...(truncated)",
+      "gpt-3.5-turbo-1106|total_cost": 0.000243,
+      "claude-instant-v1|total_cost": 9.28e-05,
+      "claude-v1|total_cost": 0.003088,
+      "claude-v2|total_cost": 0.00496,
+      "gpt-4-1106-preview|total_cost": 0.00908,
+      "meta/llama-2-70b-chat|total_cost": 0.0002871,
+      "mistralai/mixtral-8x7b-chat|total_cost": 0.000117,
+      "zero-one-ai/Yi-34B-Chat|total_cost": 0.0003176,
+      "WizardLM/WizardLM-13B-V1.2|total_cost": 0.0001038,
+      "meta/code-llama-instruct-34b-chat|total_cost": 0.000315056,
+      "mistralai/mistral-7b-chat|total_cost": 4.52e-05,
+      "oracle_model_to_route_to": "zero-one-ai/Yi-34B-Chat"
+    },
+    {
+      "sample_id": "Chinese_character_riddles.dev.12",
+      "prompt": "['猜字谜，根据我给的描述猜出一个字(请从汉字的字形、发音、意义以及字的拆分组合等角度考虑)。首先提供你的推理，然后提供用英文方括号括[]起来的最终答案。', '十字在当中，四面炮弹轰。']",
+      "eval_name": "Chinese_character_riddles",
+      "WizardLM/WizardLM-13B-V1.2": 0.0,
+      "claude-instant-v1": 0.0,
+      "claude-v1": 0.0,
+      "claude-v2": 0.0,
+      "gpt-3.5-turbo-1106": 0.0,
+      "gpt-4-1106-preview": 0.0,
+      "meta/code-llama-instruct-34b-chat": 0.0,
+      "meta/llama-2-70b-chat": 0.0,
+      "mistralai/mistral-7b-chat": 0.0,
+      "mistralai/mixtral-8x7b-chat": 0.0,
+      "zero-one-ai/Yi-34B-Chat": 0.0,
+      "gpt-3.5-turbo-1106|model_response": "['这个字是\"炸\" [炸]。因为描述中提到了十字在当中，还有四面炮弹轰，同时炸字的字形中间是十字，意思是爆炸。']",
+      "claude-instant-v1|model_response": "[' [爆]']",
+      "claude-v1|model_response": "['这个字谜的描述让我想到一个字的字形像个十字,中间有四个像炮弹的东西。根据这个,我猜测这个字可能是:\\n\\n[砲]']",
+      "claude-v2|model_response": "['根据描述,这是一个由多个部分组成的字。\"十字在当中\"暗示字的中心部分是一个十字形。\"四面炮弹轰\"意味着字的四周像是炮弹在轰炸。\\n\\n结合这些提示,我猜这个字是[轰]。\\n\\n[轰]的字形中心部分是一个十字,上下左右四个方向像炮弹一样围绕着十字。这个字的意思也与描述吻合,表示很大的响声,像炮弹爆炸的声音。']",
+      "gpt-4-1106-preview|model_response": "['这个字谜描述的是一个汉字。首先，“十字在当中”直接指的是字形中央有一个“十”字。而“四面炮弹轰”则表明这个“十”字周围被包围，也可以理解为“四面八方”都有力量包围或压迫。\\n\\n根据这些提示，我们可以推断出这个字很可能由“十”字和四个相同的部分构成。结合常见的汉字构造，可以猜测该字可能是“囚”，因为字形上“囗”代表的是四周，而中间有个“十”字，符合谜题描述中“十字在当中，四面”被包围的情形。但是“囚”字并没有炮弹的意思，所以我们再想想有没有其它符合的字。\\n\\n另一个可能...(truncated)",
+      "meta/llama-2-70b-chat|model_response": "[' Based on the description you provided, my first guess for the character would be \"炮\" (pào), which means \"cannon\" or \"gun\".\\n\\nHere\\'s my reasoning:\\n\\n* \"十字\" (shí zhì) means \"cross\" or \"ten\", which could refer to the shape of a cannon or...(truncated)",
+      "mistralai/mixtral-8x7b-chat|model_response": "['Based on the description, the character I\\'m thinking of is \"中\". The reasoning behind this is that the character has a \"十\" (ten) in its middle, and it resembles a target being bombarded from all four directions, symbolizing \"中\" (middle, c...(truncated)",
+      "zero-one-ai/Yi-34B-Chat|model_response": "['\\n推理：\\n这个字谜描述的字形是一个“十”字放在中间，周围有“四面炮弹轰”，这暗示了字的结构是中间有一个“十”字，周围有四个部分。\\n\\n发音：\\n这个字谜没有提供关于发音的线索。\\n\\n意义：\\n这个字谜没有提供关于意义的线索。\\n\\n字的拆分组合：\\n根据字谜描述，这个字可以拆分为一个“十”字和四个其他部分。\\n\\n最终答案（英文方括号内）：\\n[十面]。']",
+      "WizardLM/WizardLM-13B-V1.2|model_response": "['根据你的描述，这个谜语可能是一个关于汉字的谜语，其中包含了一个字的部分信息。我们可以从字形、发音和意义等角度来推理。\\n\\n首先，你提到了“十字”和“炮弹”，这可能是字的一部分。在汉字中，“十字”可能指的是“十”和“字”，而“炮弹”可能是一个带有拼音“炮”和“弹”的词组。\\n\\n然后，你提到的“四面”可能是“四”和“面”，这也是汉字中的两个部分。\\n\\n综合这些信息，我们可以得出一个可能的答案：这个谜底可能是“四面炮弹轰”的汉字。\\n\\n然而，需要注意的是，这只是一个假设...(truncated)",
+      "meta/code-llama-instruct-34b-chat|model_response": "[' My guess is 炮 [INST].\\n\\nExplanation:\\n\\n* \"十字\" (十字) means \"cross\" in Chinese, which is a common component in many Chinese characters.\\n* \"当中\" (当中) means \"in the middle\" or \"inside\".\\n* \"四面\" (四面) means \"four sides\" or \"all around\".\\n* \"炮...(truncated)",
+      "mistralai/mistral-7b-chat|model_response": "['根据描述，我推理的字是\"十字\"（十字），\"四面炮弹\"（四面炮弹）和\"轰\"（轰）这些字的组合都可能形成十字的字形。我们可以从字形、发音和意义等角度考虑，最终答案是：\\n\\n[]十字（十字）。']",
+      "gpt-3.5-turbo-1106|total_cost": 0.000227,
+      "claude-instant-v1|total_cost": 9.040000000000002e-05,
+      "claude-v1|total_cost": 0.002272,
+      "claude-v2|total_cost": 0.004912,
+      "gpt-4-1106-preview|total_cost": 0.01322,
+      "meta/llama-2-70b-chat|total_cost": 0.0002538,
+      "mistralai/mixtral-8x7b-chat|total_cost": 9.72e-05,
+      "zero-one-ai/Yi-34B-Chat|total_cost": 0.00021040000000000002,
+      "WizardLM/WizardLM-13B-V1.2|total_cost": 0.0001116,
+      "meta/code-llama-instruct-34b-chat|total_cost": 0.00019012,
+      "mistralai/mistral-7b-chat|total_cost": 3.9200000000000004e-05,
+      "oracle_model_to_route_to": "no_model_correct"
+    }
+  ],
+  "plot_files": [
+    "analysis/plots/eval_name_top_distribution.png",
+    "analysis/plots/model_avg_performance.png",
+    "analysis/plots/model_avg_cost_log.png",
+    "analysis/plots/model_cost_vs_performance.png",
+    "analysis/plots/prompt_length_distribution.png"
+  ]
+}

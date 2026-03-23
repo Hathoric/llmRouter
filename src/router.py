@@ -23,7 +23,7 @@ class Router:
 
         self._engine = RuleEngine(config_path=rules_path)
         self._registry = ModelRegistry(config_path=models_path)
-        self._default_model_id = default_model_id or "gpt-4o-mini"
+        self._default_model_id = default_model_id or "gpt-3.5-turbo-1106"
 
     def route(self, context: dict[str, Any]) -> dict[str, Any]:
         """
