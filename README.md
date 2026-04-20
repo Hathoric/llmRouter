@@ -1,65 +1,58 @@
 # llmRouter
 
-基于规则的 LLM 模型路由：根据任务类型、长度、成本等规则将请求路由到不同模型/端点。
+当前项目已切换为 **Query 侧原型增量学习框架**（已移除基于规则的路由实现）。
 
 ## 项目结构
 
 ```
 llmRouter/
-├── config/
-│   ├── rules.yaml    # 路由规则（优先级 + 条件 → target 模型）
-│   └── models.yaml   # 模型/端点注册
-├── src/
-│   ├── router.py     # 路由入口
-│   ├── rules/
-│   │   ├── engine.py     # 规则引擎
-│   │   └── conditions.py # 条件匹配（eq/gte/tags 等）
-│   └── models/
-│       └── registry.py   # 模型注册表
-├── main.py           # 示例调用
+├── query_side/
+│   ├── config.py      # Query 侧配置（原型预算、阈值、损失权重）
+│   ├── modules.py     # DeBERTa + 双投影头（h_known, h_unknown）
+│   ├── prototype.py   # 子原型空间、伪标签负载阈值、OOD 生长
+│   ├── losses.py      # L_supcon / L_dpl / L_ood
+│   └── pipeline.py    # 训练步、推理、OOD 处理、需求向量导出
+├── main.py            # dataset 驱动的最小训练/推理入口
+├── tests/
+│   └── test_query_side_smoke.py
 └── requirements.txt
 ```
 
-## 规则设计
+## Query 侧原型增量学习框架
 
-- **规则** 在 `config/rules.yaml` 中配置，按 `priority` 从高到低匹配，**先匹配到的规则** 的 `target` 即为所选模型 id。
-- **条件** 支持：
-  - 简单相等：`task_type: chat`
-  - 比较运算：`max_tokens: ["gte", 4000]`（支持 eq/ne/gt/gte/lt/lte/in/contains）
-  - 标签：`tags: ["reasoning", "math"]`（请求 context 的 tags 包含其一即满足）
+新增 `query_side/`，用于把 Query 建模为“已知任务 + 未知任务”的原型分布表示：
 
-## 使用方式
+- `modules.py`：DeBERTa 编码器 + 双投影头（`h_known`, `h_unknown`）
+- `prototype.py`：子原型空间初始化、近邻分配、负载自适应阈值、OOD 原型生长
+- `losses.py`：`L_supcon` / `L_dpl` / `L_ood`（简化可训练版本）
+- `pipeline.py`：统一训练步、伪标签增量、OOD 处理、需求向量导出
+
+最小使用示例：
+
+```python
+import torch
+from query_side import QuerySideConfig, QuerySidePipeline
+
+cfg = QuerySideConfig(num_known_tasks=3, total_prototypes=30)
+pipe = QuerySidePipeline(cfg, device="cpu")
+
+labeled_texts = ["sample a", "sample b", "sample c"]
+labels = torch.tensor([0, 1, 2], dtype=torch.long)
+pipe.initialize_bank(labeled_texts, labels)
+
+out = pipe.infer(["new query"])
+print(out.demand_vector.shape)
+```
+
+> 注：当前实现是“可运行骨架 + 核心接口”，便于后续替换成你的真实数据加载、完整 OOD 聚类（如 HDBSCAN）和在线增量策略。
+
+## 用 dataset 快速测试
 
 ```bash
 pip install -r requirements.txt
-python main.py
+python main.py --data-path dataset/routerbench_0shot.pkl --text-col prompt --label-col eval_name --total-prototypes 300
 ```
 
-在代码中：
-
-```python
-from src.router import Router
-
-router = Router()
-# 可选：自定义规则/模型配置文件路径
-# router = Router(rules_path="path/to/rules.yaml", models_path="path/to/models.yaml")
-
-context = {
-    "task_type": "chat",      # chat | completion
-    "max_tokens": 500,
-    "cost_tier": "low",       # low | medium | high
-    "tags": ["reasoning"],    # 可选
-}
-result = router.route(context)
-# result 包含 model_id, endpoint, name, provider, max_context_tokens 等
-```
-
-## 配置说明
-
-- **rules.yaml**：增删改规则即可调整路由策略，无需改代码。
-- **models.yaml**：`endpoint` 可写环境变量占位，如 `${OPENAI_API_BASE}`，运行时自动替换。
-
-## 扩展
-
-- 在 `conditions.py` 中增加新的比较符或条件类型。
-- 在 `rules.yaml` 中增加新规则或新 `target`，并在 `models.yaml` 中注册对应模型。
+说明：
+- `--label-col` 默认是 `eval_name`，也可换成你的任务标签列。
+- `total_prototypes` 默认已从 3000 调整到 300，更适合首轮实验。
